@@ -1,53 +1,77 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ro">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de pornire</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Workshop 2026</title>
     <link rel="stylesheet" href="stil.css">
     <script>
-        function showPage(section) {
+        function showPage(sectionId) {
+            // Ascunde toate secțiunile
             document.querySelectorAll('.section').forEach(sec => {
                 sec.style.display = 'none';
             });
-            const targetSection = document.querySelector(`#${section}`);
+            // Afișează secțiunea selectată
+            const targetSection = document.querySelector(`#${sectionId}`);
             if (targetSection) {
                 targetSection.style.display = 'block';
             }
         }
         
         document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.button-flex button').forEach(button => {
-                button.onclick = function () {
-                    showPage(this.dataset.section);
+            // Atașează evenimentul de click pe link-urile din navigație
+            document.querySelectorAll('.nav-links a, .logo a, .btn-donate').forEach(link => {
+                link.onclick = function (e) {
+                    const section = this.dataset.section;
+                    if (section) {
+                        e.preventDefault(); // Previne refresh-ul paginii
+                        showPage(section);
+                    }
                 };
             });
+            // Afișează prima pagină la încărcare
             showPage("page1");
         });
-
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-        }
     </script>
 </head>
 <body>
-    <div class="topnav">
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        &#9776;
-    </a>
-        <div class="button-flex" id="myLinks">
-            <button data-section="page1">Home</button>
-            <button data-section="page2">About</button>
-            <button data-section="page3">Contact</button>
-        </div>
+    <div class="top-contact-header">
+        <a href="mailto:">✉ </a> 
+        <a href="tel:+40711111111">📞 +40 740 750 790</a>
     </div>
 
-    <div id="page1" class="section">
-        <h1>Home</h1>
-    </div>
+    <header class="header-fix">
+        <div class="container-header">
+            <div class="logo">
+                <a href="#" data-section="page1">
+                    <img src="logo.webp" alt="logo" class="logo-img">
+                    <span>Drone Workshop 2026</span>
+                </a>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#" data-section="page1">Home</a>
+                <a href="#" data-section="page2">About</a>
+                <a href="#" data-section="page3">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div id="page1" class="section">
+            <h1>Home</h1>
+            <p>Bine ați venit la DroWo 2026!</p>
+        </div>
+
+        <div id="page2" class="section">
+            <h1>About Us</h1>
+            <p>Informatii despre eveniment</p>
+        </div>
+
+        <div id="page3" class="section">
+            <h1>Contact</h1>
+            <p>Ne puteți contacta la adresa de email de mai sus.</p>
+        </div>
+    </main>
 </body>
+</html>

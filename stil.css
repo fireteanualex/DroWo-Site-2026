@@ -1,102 +1,161 @@
+/* --- SETĂRI GENERALE --- */
 body {
+    /* Fontul și gradientul de fundal din stil.css original */
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     background: linear-gradient(rgb(66, 4, 148) 0%, rgb(20, 7, 27) 100%);
-    margin: 5px;
-    padding: 20px;
+    background-attachment: fixed; /* Fundalul rămâne fix la scroll */
+    margin: 0;
+    /* Padding-ul de sus previne suprapunerea conținutului cu navigația fixă */
+    padding-top: 140px; 
     font-size: 20px;
+    color: rgb(18, 43, 79);
+    min-height: 100vh;
 }
 
-.topnav {
-    text-align: center;
+/* --- BARA DE CONTACT (TOP BAR) --- */
+.top-contact-header {
+    /* Culoare adaptată din tema mov închis */
+    background-color: rgb(20, 7, 27);
+    color: white;
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1002;
+    height: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.topnav a {
-    display: block;
+
+.top-contact-header a {
+    color: white;
     text-decoration: none;
-    padding: 4px 20px;
-    margin-bottom: 15px;
-}
-.topnav a:hover{
-    background: none;
-}
-.topnav .icon {
-    font-size: 30px;
-    cursor: pointer;
-    width: 30px;
-    margin: 15px auto;
+    margin-left: 20px;
+    transition: color 0.3s;
 }
 
-.topnav .icon:hover{
-    background-color: rgb(18, 43, 79);
-    color: rgb(178, 219, 255);
+.top-contact-header a:hover {
+    /* Hover cu albastrul deschis caracteristic temei */
+    color: rgb(149, 214, 247);
 }
-.button-flex {
+
+/* --- HEADER FIX (NAV BAR) --- */
+.header-fix {
+    position: fixed;
+    top: 40px; /* Plasat imediat sub bara de contact */
+    left: 0;
+    width: 100%;
+    background-color: rgb(105, 17, 146);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1001;
+    height: 80px;
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-direction: column;
     align-items: center;
 }
 
-.button-flex button {
-    padding: 12px;
-    font-size: 30px;
-    width: 30%;
-    border: none;
-    border-radius: 4px;
-    background: rgb(149, 214, 247);
-    color: rgb(18, 43, 79);
-    cursor: pointer;
-    transition: background 0.3s;
-    min-width: 130px;
+.container-header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.button-flex button:hover {
-    background: rgb(18, 43, 79);
-    color: rgb(149, 214, 247);
-}
-.button-flex button.active{
-    background: rgb(18, 43, 79);
-    color: rgb(149, 214, 247);
+/* LOGO */
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(208, 218, 233);;
+    font-size: 24px;
+    font-weight: bold;
 }
 
+.logo-img {
+    height: 45px;
+    width: auto;
+}
+
+/* LINK-URI NAVIGARE */
+.nav-links a {
+    text-decoration: none;
+    color: rgb(208, 218, 233);
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    /* Mov din tema originală pentru hover */
+    color: rgb(209, 55, 209);
+}
+
+/* --- CONȚINUT ȘI SECȚIUNI --- */
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    /* Overlay semi-transparent pentru contrastul textului pe fundalul întunecat */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+/* Logica de afișare a secțiunilor */
 .section {
     display: none;
 }
+
 h1 {
+    color: rgb(133, 69, 163); /* Mov din stil.css */
     position: relative;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 32px;
 }
 
+/* Linia decorativă sub titlu */
 h1::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
-    height: 3px;
+    width: 60px;
+    height: 4px;
     background-color: rgb(18, 43, 79);
     border-radius: 2px;
 }
 
-h1,h2, h3 {
-    color: rgb(133, 69, 163);
-}
-
 p {
-    color: rgb(18, 43, 79);
-    line-height: 1.6;
-    font-size: 20px;
+    color: #f0f0f0; /* Text deschis pentru lizibilitate pe mov închis */
+    line-height: 1.8;
+    font-size: 18px;
 }
 
-
-a {
-    color: rgb(62, 127, 168);
-    text-decoration: none;
-    transition: background 0.3s
+.imagine-centrata {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
-a:hover {
-    background-color: rgb(18, 43, 79);
-    color: rgb(149, 214, 247);
+/* --- RESPONSIVITATE --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Ascundem navigația pe mobil sau o poți adapta în meniu burger */
+    }
+    
+    body {
+        padding-top: 160px;
+    }
+
+    .container-header {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
