@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de pornire</title>
+    <link rel="stylesheet" href="stil.css">
+    <script>
+        function showPage(section) {
+            document.querySelectorAll('.section').forEach(sec => {
+                sec.style.display = 'none';
+            });
+            const targetSection = document.querySelector(`#${section}`);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.button-flex button').forEach(button => {
+                button.onclick = function () {
+                    showPage(this.dataset.section);
+                };
+            });
+            showPage("page1");
+        });
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        &#9776;
+    </a>
+        <div class="button-flex" id="myLinks">
+            <button data-section="page1">Home</button>
+            <button data-section="page2">About</button>
+            <button data-section="page3">Contact</button>
+        </div>
+    </div>
+
+    <div id="page1" class="section">
+        <h1>Home</h1>
+    </div>
+</body>
