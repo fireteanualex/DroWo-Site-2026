@@ -4,132 +4,125 @@ html {
 }
 
 body {
-    /* Schimbăm doar fontul în Orbitron */
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', sans-serif; /* */
     background: linear-gradient(90deg, rgb(94, 15, 158) 0%, rgb(89, 36, 235) 50%, rgb(13, 195, 228) 100%);
     background-attachment: fixed;
     margin: 0;
-    padding-top: 140px; 
+    padding-top: 100px; 
     font-size: 16px; 
     color: #f0f0f0;
     min-height: 100vh;
 }
 
-/* --- BARA DE CONTACT (TOP BAR) --- */
-.top-contact-header {
-    background-color: rgb(20, 7, 27);
-    color: white;
-    padding: 10px 20px;
-    text-align: right;
-    font-size: 12px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1002;
-    height: 40px;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.top-contact-header a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    transition: all 0.3s ease;
-    text-shadow: 0 0 5px rgb(255, 255, 255);
-}
-
-/* --- HEADER FIX (NAV BAR) --- */
+/* --- HEADER NAV BAR --- */
 .header-fix {
     position: fixed;
-    top: 40px;
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(152, 35, 199); /* Păstrăm culoarea mov stabilită */
+    background-color: rgb(152, 35, 199);
     z-index: 1001;
-    height: 80px;
+    height: 95px;
     display: flex;
     align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 .container-header {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 50px; /* Padding-ul lateral de 50px */
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* LOGO NEON */
-.logo a {
+/* Aliniere elemente */
+.nav-left {
+    flex: 1;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: rgb(208, 218, 233);
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgb(208, 218, 233);
+    justify-content: flex-start;
+    gap: 30px;
 }
 
-/* LINK-URI NAVIGARE NEON */
-.nav-links a {
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+}
+
+.logo-center {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+/* STILURI BUTOANE ȘI LINK-URI (FONT 18PX) */
+.nav-left a, .btn-scroll {
     text-decoration: none;
     color: rgb(208, 218, 233);
-    margin: 0 15px;
     font-weight: bold;
-    transition: all 0.3s ease;
+    font-size: 18px; /* Font de 18px */
+    transition: 0.3s;
     text-shadow: 0 0 5px rgba(208, 218, 233, 0.4);
 }
 
-.nav-links a:hover {
+.nav-left a:hover, .btn-scroll:hover {
     color: rgb(13, 195, 228);
-    text-shadow: 0 0 10px rgb(13, 195, 228), 0 0 20px rgb(13, 195, 228);
+    text-shadow: 0 0 10px rgb(13, 195, 228);
 }
 
-/* --- CONȚINUT ȘI TITLURI NEON --- */
+/* LOGO */
+.logo-center a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-img { height: 45px; margin-bottom: 5px; }
+
+/* BUTON LOGIN (FONT 18PX) */
+.btn-login {
+    background-color: rgb(209, 55, 209);
+    color: white !important;
+    padding: 12px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Font de 18px */
+    box-shadow: 0 0 10px rgba(209, 55, 209, 0.5);
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: white;
+    color: rgb(209, 55, 209) !important;
+    box-shadow: 0 0 20px white;
+}
+
+/* --- CONȚINUT --- */
 .content-wrapper {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
+    padding: 20px;
 }
 
 .section {
-    display: block; 
-    padding: 60px 0;
-    scroll-margin-top: 140px; 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 100px 50px;
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    scroll-margin-top: 110px;
 }
 
-.section:last-child {
-    border-bottom: none;
-}
-
-/* TITLU H1 NEON */
 h1 {
-    color: rgb(206, 10, 196); /* Păstrăm movul neon */
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    font-size: 32px;
-    text-shadow: 
-        0 0 5px #fff, 
-        0 0 10px rgb(206, 10, 196), 
-        0 0 20px rgb(206, 10, 196);
+    color: rgb(206, 10, 196);
+    font-size: 36px;
+    text-shadow: 0 0 10px rgb(206, 10, 196);
 }
 
-p {
-    color: #f0f0f0;
-    line-height: 1.8;
-    font-size: 18px;
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
-}
-
-.logo-img {
-    height: 45px;
-    width: auto;
-}
+p { line-height: 1.8; font-size: 18px; color: #d0dae9; }
