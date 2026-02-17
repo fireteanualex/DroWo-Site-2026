@@ -1,22 +1,21 @@
 /* --- SETĂRI GENERALE --- */
 html {
-    /* Activează scroll-ul lin la apăsarea butoanelor */
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    /* Gradientul tău orizontal */
+    font-family: 'Orbitron', sans-serif;
     background: linear-gradient(70deg, rgb(94, 15, 158) 0%, rgb(89, 36, 235) 50%, rgb(13, 195, 228) 100%);
     background-attachment: fixed;
     margin: 0;
     padding-top: 140px; 
-    font-size: 20px;
-    color: #f0f0f0;
+    font-size: 16px; 
+    color: #e0f7ff;
     min-height: 100vh;
+    letter-spacing: 1px;
 }
 
-/* --- BARA DE CONTACT (TOP BAR) --- */
+/* --- BARA DE CONTACT --- */
 .top-contact-header {
     background-color: rgb(20, 7, 27);
     color: white;
@@ -29,28 +28,29 @@ body {
     z-index: 1002;
     height: 40px;
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(13, 195, 228, 0.3);
 }
 
 .top-contact-header a {
-    color: white;
+    color: #0dc3e4;
     text-decoration: none;
     margin-left: 20px;
     transition: all 0.3s ease;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-/* --- HEADER FIX (NAV BAR) --- */
+/* --- HEADER FIX --- */
 .header-fix {
     position: fixed;
     top: 40px;
     left: 0;
     width: 100%;
-    background-color: rgb(152, 35, 199); /* Mov solid conform cerinței */
+    background-color: rgba(152, 35, 199, 0.9);
     z-index: 1001;
     height: 80px;
     display: flex;
     align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
 .container-header {
@@ -62,71 +62,73 @@ body {
     align-items: center;
 }
 
-/* LOGO CU TEXT NEON */
+/* LOGO ȘI NAVIGARE */
 .logo a {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     text-decoration: none;
-    color: rgb(208, 218, 233);
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(208, 218, 233, 0.8);
+    color: #d0dae9;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(208, 218, 233, 0.5);
 }
 
 .nav-links a {
     text-decoration: none;
-    color: rgb(208, 218, 233);
+    color: #d0dae9;
     margin: 0 15px;
-    font-weight: bold;
+    font-weight: 700;
+    text-transform: uppercase;
     transition: all 0.3s ease;
-    text-shadow: 0 0 5px rgba(208, 218, 233, 0.4);
+    font-size: 14px;
 }
 
 .nav-links a:hover {
-    color: rgb(209, 55, 209);
-    text-shadow: 0 0 10px rgb(209, 55, 209), 0 0 20px rgb(209, 55, 209);
+    color: #0dc3e4;
+    text-shadow: 0 0 10px #0dc3e4;
 }
 
-/* --- SECȚIUNI ȘI CONȚINUT --- */
+/* --- CONȚINUT --- */
 .content-wrapper {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 40px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(10, 5, 30, 0.5);
     border-radius: 15px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(152, 35, 199, 0.3);
 }
 
 .section {
-    /* Am eliminat display: none; pentru a fi vizibile toate */
     display: block; 
     padding: 60px 0;
-    /* scroll-margin-top previne ca titlul să fie ascuns sub header la scroll */
     scroll-margin-top: 140px; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Elimină bordura pentru ultima secțiune */
 .section:last-child {
     border-bottom: none;
 }
 
-/* TITLU H1 NEON */
+/* TITLU NEON (Stilul din formular) */
 h1 {
-    color: rgb(206, 10, 196);
-    font-size: 42px;
+    color: #ce0ac4;
+    font-size: 28px;
+    text-transform: uppercase;
     text-shadow: 
         0 0 5px #fff, 
-        0 0 10px rgb(206, 10, 196), 
-        0 0 20px rgb(206, 10, 196);
-    margin-bottom: 20px;
+        0 0 10px #ce0ac4, 
+        0 0 20px #ce0ac4;
+    margin-bottom: 25px;
 }
 
 p {
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 20px;
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+    color: #b3f0ff;
+    /* Strălucire foarte fină pe textul de bază */
+    text-shadow: 0 0 2px rgba(179, 240, 255, 0.3);
 }
 
 .logo-img {
