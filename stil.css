@@ -7,7 +7,7 @@ html {
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     /* Gradientul tău orizontal */
-    background: linear-gradient(90deg, rgb(94, 15, 158) 0%, rgb(89, 36, 235) 50%, rgb(13, 195, 228) 100%);
+    background: linear-gradient(70deg, rgb(94, 15, 158) 0%, rgb(89, 36, 235) 50%, rgb(13, 195, 228) 100%);
     background-attachment: fixed;
     margin: 0;
     padding-top: 140px; 
