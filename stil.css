@@ -1,20 +1,23 @@
 /* --- SETĂRI GENERALE --- */
+html {
+    /* Activează scroll-ul lin la apăsarea butoanelor */
+    scroll-behavior: smooth;
+}
+
 body {
-    /* Fontul și gradientul de fundal din stil.css original */
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    background: linear-gradient(rgb(66, 4, 148) 0%, rgb(20, 7, 27) 100%);
-    background-attachment: fixed; /* Fundalul rămâne fix la scroll */
+    /* Gradientul tău orizontal */
+    background: linear-gradient(90deg, rgb(94, 15, 158) 0%, rgb(89, 36, 235) 50%, rgb(13, 195, 228) 100%);
+    background-attachment: fixed;
     margin: 0;
-    /* Padding-ul de sus previne suprapunerea conținutului cu navigația fixă */
     padding-top: 140px; 
     font-size: 20px;
-    color: rgb(18, 43, 79);
+    color: #f0f0f0;
     min-height: 100vh;
 }
 
 /* --- BARA DE CONTACT (TOP BAR) --- */
 .top-contact-header {
-    /* Culoare adaptată din tema mov închis */
     background-color: rgb(20, 7, 27);
     color: white;
     padding: 10px 20px;
@@ -33,22 +36,17 @@ body {
     color: white;
     text-decoration: none;
     margin-left: 20px;
-    transition: color 0.3s;
-}
-
-.top-contact-header a:hover {
-    /* Hover cu albastrul deschis caracteristic temei */
-    color: rgb(149, 214, 247);
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 /* --- HEADER FIX (NAV BAR) --- */
 .header-fix {
     position: fixed;
-    top: 40px; /* Plasat imediat sub bara de contact */
+    top: 40px;
     left: 0;
     width: 100%;
-    background-color: rgb(105, 17, 146);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    background-color: rgb(152, 35, 199); /* Mov solid conform cerinței */
     z-index: 1001;
     height: 80px;
     display: flex;
@@ -64,98 +62,74 @@ body {
     align-items: center;
 }
 
-/* LOGO */
+/* LOGO CU TEXT NEON */
 .logo a {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: rgb(208, 218, 233);;
+    color: rgb(208, 218, 233);
     font-size: 24px;
     font-weight: bold;
+    text-shadow: 0 0 10px rgba(208, 218, 233, 0.8);
 }
 
-.logo-img {
-    height: 45px;
-    width: auto;
-}
-
-/* LINK-URI NAVIGARE */
 .nav-links a {
     text-decoration: none;
     color: rgb(208, 218, 233);
     margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(208, 218, 233, 0.4);
 }
 
 .nav-links a:hover {
-    /* Mov din tema originală pentru hover */
     color: rgb(209, 55, 209);
+    text-shadow: 0 0 10px rgb(209, 55, 209), 0 0 20px rgb(209, 55, 209);
 }
 
-/* --- CONȚINUT ȘI SECȚIUNI --- */
+/* --- SECȚIUNI ȘI CONȚINUT --- */
 .content-wrapper {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px;
-    /* Overlay semi-transparent pentru contrastul textului pe fundalul întunecat */
+    padding: 20px 40px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     backdrop-filter: blur(5px);
 }
 
-/* Logica de afișare a secțiunilor */
 .section {
-    display: none;
+    /* Am eliminat display: none; pentru a fi vizibile toate */
+    display: block; 
+    padding: 60px 0;
+    /* scroll-margin-top previne ca titlul să fie ascuns sub header la scroll */
+    scroll-margin-top: 140px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Elimină bordura pentru ultima secțiune */
+.section:last-child {
+    border-bottom: none;
+}
+
+/* TITLU H1 NEON */
 h1 {
-    color: rgb(133, 69, 163); /* Mov din stil.css */
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    font-size: 32px;
-}
-
-/* Linia decorativă sub titlu */
-h1::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 60px;
-    height: 4px;
-    background-color: rgb(18, 43, 79);
-    border-radius: 2px;
+    color: rgb(206, 10, 196);
+    font-size: 42px;
+    text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px rgb(206, 10, 196), 
+        0 0 20px rgb(206, 10, 196);
+    margin-bottom: 20px;
 }
 
 p {
-    color: #f0f0f0; /* Text deschis pentru lizibilitate pe mov închis */
     line-height: 1.8;
-    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
 }
 
-.imagine-centrata {
-    display: block;
-    margin: 30px auto;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-}
-
-/* --- RESPONSIVITATE --- */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Ascundem navigația pe mobil sau o poți adapta în meniu burger */
-    }
-    
-    body {
-        padding-top: 160px;
-    }
-
-    .container-header {
-        flex-direction: column;
-        gap: 10px;
-    }
+.logo-img {
+    height: 45px;
+    width: auto;
 }
