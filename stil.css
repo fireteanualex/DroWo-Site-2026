@@ -126,3 +126,68 @@ h1 {
 }
 
 p { line-height: 1.8; font-size: 18px; color: #d0dae9; }
+
+/* --- STILURI LEADERBOARD NEON --- */
+.leaderboard-container {
+    width: 100%;
+    margin-top: 30px;
+    border: 1px solid rgba(13, 195, 228, 0.2); /* */
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: rgba(152, 35, 199, 0.3); /* */
+    font-weight: bold;
+    color: rgb(13, 195, 228); /* Cyan-ul din gradientul tău */
+    text-shadow: 0 0 5px rgba(13, 195, 228, 0.5);
+    border-bottom: 2px solid rgba(13, 195, 228, 0.3);
+}
+
+.leaderboard-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.leaderboard-row:last-child {
+    border-bottom: none;
+}
+
+.leaderboard-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(10px); /* Efect de glisare la hover */
+}
+
+/* Evidențiere Top 3 */
+.leaderboard-row.top-3 .rank {
+    color: #fff;
+    text-shadow: 0 0 10px rgb(206, 10, 196); /* Mov neon */
+}
+
+.leaderboard-row.top-3 .score {
+    color: rgb(13, 195, 228);
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(13, 195, 228);
+}
+
+.leaderboard-row .rank {
+    width: 50px;
+}
+
+.leaderboard-row .name {
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.leaderboard-row .score {
+    text-align: right;
+    width: 100px;
+}
