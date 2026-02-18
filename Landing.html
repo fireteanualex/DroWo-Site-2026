@@ -12,24 +12,32 @@
 <body>
     <header class="header-fix">
         <div class="container-header">
-            <nav class="nav-left">
-                <a href="#about">ABOUT</a>
-                <a href="#program">PROGRAM</a>
-                <a href="#traineri">TRAINERI</a>
-                <a href="#sponsori">SPONSORI</a>
-                <a href="#faq">FAQ</a>
-            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="nav-container">
+                <nav class="nav-left">
+                    <a href="#about">ABOUT</a>
+                    <a href="#program">PROGRAM</a>
+                    <a href="#traineri">TRAINERI</a>
+                    <a href="#sponsori">SPONSORI</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+
+                <div class="nav-right">
+                    <a href="#quiz-uri" class="btn-scroll">QUIZ-URI</a>
+                    <a href="login.html" class="btn-login">LOGIN</a>
+                </div>
+            </div>
 
             <div class="logo-center">
                 <a href="#home">
                     <img src="logo.webp" alt="logo" class="logo-img">
                     <span>DroWo 2026</span>
                 </a>
-            </div>
-
-            <div class="nav-right">
-                <a href="#quiz-uri" class="btn-scroll">QUIZ-URI</a>
-                <a href="login.html" class="btn-login">LOGIN</a>
             </div>
         </div>
     </header>
@@ -73,46 +81,6 @@
                     <span class="name">Echipa 1</span>
                     <span class="score">0</span>
                 </div>
-                <div class="leaderboard-row top-3">
-                    <span class="rank">02</span>
-                    <span class="name">Echipa 2</span>
-                    <span class="score">0</span>
-                </div>
-                <div class="leaderboard-row top-3">
-                    <span class="rank">03</span>
-                    <span class="name">Echipa 3</span>
-                    <span class="score">0</span>
-                </div>
-                <div class="leaderboard-row">
-                    <span class="rank">04</span>
-                    <span class="name">Echipa 4</span>
-                    <span class="score">0</span>
-                </div>
-                <div class="leaderboard-row">
-                    <span class="rank">05</span>
-                    <span class="name">Echipa 5</span>
-                    <span class="score">0</span>
-                </div>
-                <div class="leaderboard-row">
-                    <span class="rank">06</span>
-                    <span class="name">Echipa 6</span>
-                    <span class="score">0</span>
-                </div>
-                <div class="leaderboard-row">
-                    <span class="rank">07</span>
-                    <span class="name">Echipa 7</span>
-                    <span class="score">0</span>
-                </div>
-                <div class="leaderboard-row">
-                    <span class="rank">08</span>
-                    <span class="name">Echipa 8</span>
-                    <span class="score">0</span>
-                </div>
-                <div class="leaderboard-row">
-                    <span class="rank">09</span>
-                    <span class="name">Echipa 9</span>
-                    <span class="score">0</span>
-                </div>
                 <div class="leaderboard-row">
                     <span class="rank">10</span>
                     <span class="name">Echipa 10</span>
@@ -131,5 +99,39 @@
             <p>Întrebări frecvente.</p>
         </section>
     </main>
+
+    <script>
+        // Control Burger Menu
+        const menuBtn = document.querySelector('#mobile-menu');
+        const navContainer = document.querySelector('.nav-container');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('is-active');
+            navContainer.classList.toggle('active');
+        });
+
+        // Închidere automată la click pe link
+        document.querySelectorAll('.nav-container a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('is-active');
+                navContainer.classList.remove('active');
+            });
+        });
+
+        // Scroll lin
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    const headerOffset = 100;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
