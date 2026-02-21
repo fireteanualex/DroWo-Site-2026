@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 05, 2026 at 03:39 PM
+-- Generation Time: Feb 21, 2026 at 05:47 PM
 -- Server version: 11.8.3-MariaDB-log
 -- PHP Version: 7.2.34
 
@@ -31,17 +31,24 @@ CREATE TABLE `candidati` (
   `id` int(11) NOT NULL,
   `nume` varchar(100) NOT NULL,
   `prenume` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
+  `email` varchar(150) NOT NULL,
   `telefon` varchar(20) NOT NULL,
-  `facultate` varchar(150) NOT NULL,
+  `facultate` varchar(255) DEFAULT NULL,
   `an_studiu` varchar(50) NOT NULL,
-  `status` enum('neverificat','confirmat','esuat','in_asteptare') DEFAULT 'neverificat',
-  `data_inscriere` timestamp NULL DEFAULT current_timestamp(),
   `is_student_upb` tinyint(1) DEFAULT 1,
   `universitate_externa` varchar(255) DEFAULT NULL,
   `a_mai_participat` tinyint(1) DEFAULT 0,
-  `evenimente_anterioare` text DEFAULT NULL
+  `evenimente_anterioare` varchar(255) DEFAULT NULL,
+  `cum_ai_aflat` varchar(255) NOT NULL,
+  `membru_euroavia` tinyint(1) DEFAULT 0,
+  `departament_euroavia` varchar(100) DEFAULT NULL,
+  `gdpr` varchar(10) NOT NULL,
+  `data_inscriere` timestamp NULL DEFAULT current_timestamp(),
+  `status` varchar(50) DEFAULT 'neverificat'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
 
 --
 -- Indexes for dumped tables
@@ -62,7 +69,7 @@ ALTER TABLE `candidati`
 -- AUTO_INCREMENT for table `candidati`
 --
 ALTER TABLE `candidati`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
