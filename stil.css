@@ -1,25 +1,23 @@
 /* --- SETĂRI GENERALE --- */
 html {
-    scroll-behavior: auto; /* Controlat prin JS pentru viteză */
+    scroll-behavior: auto; /* Gestionat prin JS */
 }
 
 body {
-    font-family: 'Orbitron', sans-serif; 
+    font-family: 'Orbitron', sans-serif;
     background: linear-gradient(90deg, rgb(94, 15, 158) 0%, rgb(89, 36, 235) 50%, rgb(13, 195, 228) 100%);
     background-attachment: fixed;
     margin: 0;
-    padding-top: 100px; 
-    font-size: 16px; 
+    padding-top: 100px;
+    font-size: 16px;
     color: #f0f0f0;
     min-height: 100vh;
 }
 
-/* --- HEADER NAV BAR --- */
+/* --- HEADER --- */
 .header-fix {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 0; left: 0; width: 100%;
     background-color: rgb(152, 35, 199);
     z-index: 1001;
     height: 95px;
@@ -45,18 +43,18 @@ body {
     align-items: center;
 }
 
-.nav-left, .nav-right {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
+/* Aliniere navigație */
+.nav-left, .nav-right { display: flex; gap: 30px; align-items: center; }
+.nav-left { justify-content: flex-start; flex: 1; }
+.nav-right { justify-content: flex-end; flex: 1; }
 
-/* LOGO CENTRAL */
+/* Logo */
 .logo-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    flex: 0 0 auto;
 }
 
 .logo-center a {
@@ -68,15 +66,15 @@ body {
     font-weight: bold;
 }
 
-.logo-img { height: 45px; margin-bottom: 5px; }
+.logo-img { height: 100px; margin-bottom: 5px; }
 
-/* BUTOANE (18PX) */
+/* Butoane (18px + Neon) */
 .nav-left a, .btn-scroll {
     text-decoration: none;
     color: rgb(208, 218, 233);
     font-weight: bold;
     font-size: 18px;
-    transition: 0.3s;
+    transition: 0.3s ease;
     text-shadow: 0 0 5px rgba(208, 218, 233, 0.4);
 }
 
@@ -97,60 +95,75 @@ body {
     transition: 0.3s;
 }
 
-/* --- BURGER MENU STYLES --- */
-.menu-toggle {
-    display: none; /* Ascuns pe desktop */
-    cursor: pointer;
-    z-index: 1005;
+.btn-login:hover {
+    background-color: white;
+    color: rgb(209, 55, 209) !important;
+    box-shadow: 0 0 20px white;
 }
 
+/* --- BURGER MENU --- */
+.menu-toggle { display: none; cursor: pointer; z-index: 1005; }
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: white;
-    transition: 0.3s;
+    display: block; width: 25px; height: 3px; margin: 5px 0;
+    background-color: white; transition: 0.3s;
     box-shadow: 0 0 5px rgb(13, 195, 228);
 }
 
-/* --- RESPONSIVITATE (MOBIL < 1100px) --- */
-@media (max-width: 1100px) {
+/* --- LEADERBOARD NEON --- */
+.leaderboard-container {
+    width: 100%; margin-top: 30px;
+    border: 1px solid rgba(13, 195, 228, 0.2);
+    border-radius: 10px; overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.leaderboard-header {
+    display: flex; justify-content: space-between; padding: 15px 25px;
+    background: rgba(152, 35, 199, 0.3);
+    font-weight: bold; color: rgb(13, 195, 228);
+    text-shadow: 0 0 5px rgba(13, 195, 228, 0.5);
+    border-bottom: 2px solid rgba(13, 195, 228, 0.3);
+}
+
+.leaderboard-row {
+    display: flex; justify-content: space-between; padding: 15px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.leaderboard-row:hover { background: rgba(255, 255, 255, 0.05); transform: translateX(10px); }
+
+.leaderboard-row.top-3 .rank { color: #fff; text-shadow: 0 0 10px rgb(206, 10, 196); }
+.leaderboard-row.top-3 .score { color: rgb(13, 195, 228); text-shadow: 0 0 10px rgb(13, 195, 228); }
+
+.leaderboard-row .rank { width: 50px; }
+.leaderboard-row .name { flex: 1; padding-left: 20px; text-align: center; }
+.leaderboard-row .score { text-align: right; width: 100px; }
+
+/* --- RESPONSIVITATE --- */
+@media (max-width: 1300px) {
     .container-header { padding: 0 20px; }
-    
     .menu-toggle { display: block; }
-
+    
     .nav-container {
-        position: fixed;
-        top: -110%; /* Ascuns sus */
-        left: 0;
-        flex-direction: column;
-        background-color: rgba(20, 7, 27, 0.98); /* Tema întunecată */
-        width: 100%;
-        height: auto;
-        padding: 110px 0 40px 0;
-        transition: 0.5s ease-in-out;
-        z-index: 1000;
-        border-bottom: 2px solid rgb(209, 55, 209);
+        position: fixed; top: -110%; left: 0;
+        flex-direction: column; width: 100%;
+        background-color: rgba(20, 7, 27, 0.98);
+        padding: 110px 0 40px 0; transition: 0.5s;
+        z-index: 1000; border-bottom: 2px solid rgb(209, 55, 209);
     }
 
-    .nav-container.active { top: 0; } /* Apare la click */
+    .nav-container.active { top: 0; }
+    .nav-left, .nav-right { flex-direction: column; gap: 25px; width: 100%; }
 
-    .nav-left, .nav-right {
-        flex-direction: column;
-        gap: 25px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    /* Animație Burger în X */
+    /* Animație X */
     .menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
     .menu-toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .menu-toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 }
 
-/* --- SECȚIUNI ȘI LEADERBOARD (DIN CODUL TĂU) --- */
+/* --- CONȚINUT --- */
 .content-wrapper { max-width: 1100px; margin: 0 auto; padding: 20px; }
 .section { padding: 100px 50px; margin-bottom: 40px; background: rgba(0, 0, 0, 0.2); border-radius: 20px; scroll-margin-top: 110px; }
-h1 { color: rgb(206, 10, 196); font-size: 36px; text-shadow: 0 0 10px rgb(206, 10, 196); }
-/* ... restul stilurilor Leaderboard raman neschimbate ... */
+h1 { color: rgb(206, 10, 196); font-size: 36px; text-shadow: 0 0 10px rgb(206, 10, 196); margin-top: 0; }
+p { line-height: 1.8; font-size: 18px; color: #d0dae9; }

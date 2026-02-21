@@ -27,16 +27,15 @@
                     <a href="#faq">FAQ</a>
                 </nav>
 
-                <div class="nav-right">
+                <nav class="nav-right">
                     <a href="#quiz-uri" class="btn-scroll">QUIZ-URI</a>
                     <a href="login.html" class="btn-login">LOGIN</a>
-                </div>
+                </nav>
             </div>
 
             <div class="logo-center">
                 <a href="#home">
-                    <img src="logo.webp" alt="logo" class="logo-img">
-                    <span>DroWo 2026</span>
+                    <img src="img/logo.png" alt="logo" class="logo-img">
                 </a>
             </div>
         </div>
@@ -45,22 +44,22 @@
     <main class="content-wrapper">
         <section id="home" class="section">
             <h1>HOME</h1>
-            <p>Bine ați venit la DroWo 2026!</p>
+            <p>Bine ați venit la Drone Workshop 2026!</p>
         </section>
 
         <section id="about" class="section">
             <h1>ABOUT</h1>
-            <p>Detalii despre Drone Workshop.</p>
+            <p>Detalii despre Drone Workshop și tehnologiile viitorului.</p>
         </section>
 
         <section id="program" class="section">
             <h1>PROGRAM</h1>
-            <p>Calendarul evenimentului.</p>
+            <p>Calendarul activităților și workshop-urilor planificate.</p>
         </section>
 
         <section id="traineri" class="section">
             <h1>TRAINERI</h1>
-            <p>Cunoaște experții noștri.</p>
+            <p>Cunoaște experții care te vor ghida în lumea dronelor.</p>
         </section>
 
         <section id="quiz-uri" class="section">
@@ -73,35 +72,75 @@
             <div class="leaderboard-container">
                 <div class="leaderboard-header">
                     <span>RANK</span>
-                    <span>NAME</span>
+                    <span>TEAM NAME</span>
                     <span>SCORE</span>
                 </div>
                 <div class="leaderboard-row top-3">
                     <span class="rank">01</span>
                     <span class="name">Echipa 1</span>
-                    <span class="score">0</span>
+                    <span class="score">2500</span>
+                </div>
+                <div class="leaderboard-row top-3">
+                    <span class="rank">02</span>
+                    <span class="name">Echipa 2</span>
+                    <span class="score">2350</span>
+                </div>
+                <div class="leaderboard-row top-3">
+                    <span class="rank">03</span>
+                    <span class="name">Echipa 3</span>
+                    <span class="score">2100</span>
+                </div>
+                <div class="leaderboard-row">
+                        <span class="rank">04</span>
+                        <span class="name">Echipa 4</span>
+                        <span class="score">1950</span>
+                </div>
+                <div class="leaderboard-row">
+                        <span class="rank">05</span>
+                        <span class="name">Echipa 5</span>
+                        <span class="score">1800</span>
+                </div>
+                <div class="leaderboard-row">
+                        <span class="rank">06</span>
+                        <span class="name">Echipa 6</span>
+                        <span class="score">1650</span>
+                </div>
+                <div class="leaderboard-row">
+                    <span class="rank">07</span>
+                    <span class="name">Echipa 7</span>
+                    <span class="score">1500</span>
+                </div>
+                <div class="leaderboard-row">
+                    <span class="rank">08</span>
+                    <span class="name">Echipa 8</span>
+                    <span class="score">1350</span>
+                </div>
+                <div class="leaderboard-row">
+                    <span class="rank">09</span>
+                    <span class="name">Echipa 9</span>
+                    <span class="score">1200</span>
                 </div>
                 <div class="leaderboard-row">
                     <span class="rank">10</span>
                     <span class="name">Echipa 10</span>
-                    <span class="score">0</span>
+                    <span class="score">1050</span>
                 </div>
             </div>
         </section>
 
         <section id="sponsori" class="section">
             <h1>SPONSORI</h1>
-            <p>Partenerii noștri tehnologici.</p>
+            <p>Partenerii noștri care fac acest eveniment posibil.</p>
         </section>
 
         <section id="faq" class="section">
             <h1>FAQ</h1>
-            <p>Întrebări frecvente.</p>
+            <p>Întrebări frecvente despre eveniment.</p>
         </section>
     </main>
 
     <script>
-        // Control Burger Menu
+        // --- BURGER MENU LOGIC ---
         const menuBtn = document.querySelector('#mobile-menu');
         const navContainer = document.querySelector('.nav-container');
 
@@ -110,7 +149,7 @@
             navContainer.classList.toggle('active');
         });
 
-        // Închidere automată la click pe link
+        // Închidere meniu la click pe link
         document.querySelectorAll('.nav-container a').forEach(link => {
             link.addEventListener('click', () => {
                 menuBtn.classList.remove('is-active');
@@ -118,7 +157,7 @@
             });
         });
 
-        // Scroll lin
+        // --- CUSTOM SMOOTH SCROLL ---
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href');
