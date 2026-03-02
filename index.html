@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Workshop 2026</title>
+    <meta name="description"
+        content="DroWo 2026 — Cea de-a 5-a ediție a Drone Workshop by Euroavia București. Construiește-ți propria dronă!">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/neoncity-script" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    <header class="header-fix">
+        <div class="container-header">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="nav-container">
+                <nav class="nav-left">
+                    <a href="#about">ABOUT</a>
+                    <a href="#program">PROGRAM</a>
+                    <a href="#traineri">TRAINERI</a>
+                    <a href="#sponsori">SPONSORI</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+
+                <nav class="nav-right">
+                    <a href="#quiz-uri" class="btn-scroll">QUIZ-URI</a>
+                    <a href="login.html" class="btn-login">LOGIN</a>
+                </nav>
+            </div>
+
+            <div class="logo-center">
+                <a href="#home">
+                    <img src="images/logo.png" alt="logo" class="logo-img">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- 1. Hero -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="neon-text">Drone Workshop <span class="edition">a 5-a editie</span></h1>
+                <p class="hero-desc">Descoperă lumea ingineriei aerospațiale și roboticii la cea de-a cincea ediție
+                    DroWo. Învață să îți construiești propria dronă de la zero!</p>
+                <div class="hero-btns">
+                    <a href="#register" class="btn-neon">INSCRIERE</a>
+                    <a href="#about" class="btn-outline">DESCOPERA</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="drone-neon-sketch">
+                    <img src="img/drone-sketch.png" alt="Drone Sketch" class="neon-img"
+                        onerror="this.src='https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=600&q=80'">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Cand si unde -->
+        <section class="info-strip">
+            <div class="info-item glass-pod">
+                <i class="fa-regular fa-calendar"></i>
+                <div class="info-text">
+                    <span class="label">CAND?</span>
+                    <span class="value">Aprilie 2026 (În curând)</span>
+                </div>
+            </div>
+            <div class="info-item glass-pod">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="info-text">
+                    <span class="label">UNDE?</span>
+                    <span class="value">UNSTPB & Aerodrom Geamana</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section glass-card">
+            <h1 class="neon-title">About</h1>
+            <div class="about-flex">
+                <div class="about-content">
+                    <p>DroWo este un workshop destinat studenților dornici să descopere noi pasiuni în domeniul
+                        ingineriei robotice și aerospațiale. Suntem la <strong>a 5-a ediție</strong> a unui eveniment
+                        care a început în 2021.</p>
+                    <p>Punem accent pe construcția de drone proprii, de agrement, oferind participanților experiență
+                        practică directă.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/WhatsApp Image 2026-02-27 at 19.09.02.jpeg" alt="Drone" class="glass-img"
+                        onerror="this.src='https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=400&q=80'">
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIE FOTO -->
+        <section id="galerie" class="section">
+            <h1 class="neon-title">Galerie Foto</h1>
+            <p>Retrăiește momentele pline de energie din anii trecuți. De la asamblare la primele zboruri, fiecare clipă
+                a fost o aventură.</p>
+            <div class="gallery-preview">
+                <div class="gallery-grid">
+                    <div class="gallery-item glass-pod">
+                        <img src="images/WhatsApp Image 2026-02-27 at 19.09.02.jpeg" alt="DroWo Moment 1">
+                    </div>
+                    <div class="gallery-item glass-pod">
+                        <img src="images/WhatsApp Image 2026-02-27 at 19.09.02 (1).jpeg" alt="DroWo Moment 2">
+                    </div>
+                    <div class="gallery-item glass-pod">
+                        <img src="images/WhatsApp Image 2026-02-27 at 19.09.02 (2).jpeg" alt="DroWo Moment 3">
+                    </div>
+                    <div class="gallery-item glass-pod">
+                        <img src="images/WhatsApp Image 2026-02-27 at 19.09.02 (3).jpeg" alt="DroWo Moment 4">
+                    </div>
+                </div>
+                <div class="gallery-action">
+                    <a href="galerie.html" class="btn-glass"><i class="fa-solid fa-images"></i> Descopera mai multe
+                        momente</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAINING -->
+        <section id="training" class="section">
+            <h1 class="neon-title">Training-uri</h1>
+            <div class="training-cards">
+                <div class="card glass-pod">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
+                        alt="Design" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Design</h3>
+                        <p>Învață conceptele de bază ale designului unei drone și aerodinamica necesară pentru un zbor
+                            stabil.</p>
+                    </div>
+                </div>
+                <div class="card glass-pod">
+                    <img src="https://images.unsplash.com/photo-1517420812314-8b171790693a?auto=format&fit=crop&w=400&q=80"
+                        alt="Electronică" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Electronica</h3>
+                        <p>Conectarea componentelor, motoarelor și senzorilor esențiali care dau viață proiectului tău.
+                        </p>
+                    </div>
+                </div>
+                <div class="card glass-pod">
+                    <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=400&q=80"
+                        alt="Software" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Betaflight / Software</h3>
+                        <p>Configurarea software-ului de control pentru un zbor precis și performanțe maxime.</p>
+                    </div>
+                </div>
+                <div class="card glass-pod">
+                    <img src="https://images.unsplash.com/photo-1523456075422-9214a1c5180f?auto=format&fit=crop&w=400&q=80"
+                        alt="Soldering" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Soldering</h3>
+                        <p>Tehnici de lipire corectă pentru conexiuni durabile și sigure în orice condiții de zbor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section">
+            <h1 class="neon-title">FAQ</h1>
+            <div class="faq-container">
+                <div class="faq-pod glass-pod">
+                    <details>
+                        <summary>În ce constă Drone Workshop?</summary>
+                        <div class="faq-content">Este un eveniment intensiv unde înveți să asamblezi, configurezi și să
+                            zbori propria dronă FPV.</div>
+                    </details>
+                </div>
+                <div class="faq-pod glass-pod">
+                    <details>
+                        <summary>Cine poate participa?</summary>
+                        <div class="faq-content">Orice student pasionat de tehnologie, robotică sau aviație de la UNSTPB
+                            și nu numai.</div>
+                    </details>
+                </div>
+                <div class="faq-pod glass-pod">
+                    <details>
+                        <summary>Ce nivel de experiență tehnică este necesar?</summary>
+                        <div class="faq-content">Nu este necesară experiență prealabilă. Trainerii noștri te vor ghida
+                            pas cu pas.</div>
+                    </details>
+                </div>
+                <div class="faq-pod glass-pod">
+                    <details>
+                        <summary>Ce vom face la eveniment?</summary>
+                        <div class="faq-content">Vom avea sesiuni de training teoretic, asamblare practică și sesiuni de
+                            zbor outdoor.</div>
+                    </details>
+                </div>
+                <div class="faq-pod glass-pod">
+                    <details>
+                        <summary>Cum vor fi premiate echipele?</summary>
+                        <div class="faq-content">Echipele vor fi evaluate pe baza performanței dronei și a abilităților
+                            de zbor în concursul final.</div>
+                    </details>
+                </div>
+                <div class="faq-pod glass-pod">
+                    <details>
+                        <summary>Când se ține?</summary>
+                        <div class="faq-content">Ediția a 5-a va avea loc în primăvara anului 2026. Stai aproape pentru
+                            datele exacte!</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATIE -->
+        <section id="locatie" class="section">
+            <h1 class="neon-title">Locatie</h1>
+            <div class="location-grid">
+                <div class="location-card glass-pod">
+                    <h3 class="card-title">UNSTPB</h3>
+                    <p>Sesiunile de training și asamblare vor avea loc în cadrul campusului UNSTPB.</p>
+                    <div class="iframe-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.976510343364!2d26.04618361552317!3d44.43787797910243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff444983083d%3A0x633dcb29d27f8a7!2sUniversitatea%20Na%C8%9Bional%C4%83%20de%20%C8%98tiin%C8%9B%C4%83%20%C8%99i%20Tehnologie%20POLITEHNICA%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro"
+                            width="100%" height="250" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="location-card glass-pod">
+                    <h3 class="card-title">Aerodrom Geamana (Arges)</h3>
+                    <p>Zborurile de test și competiția se vor desfășura în aer liber la Geamana.</p>
+                    <div class="iframe-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11293.447551066!2d24.896!3d44.814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2bb298d000001%3A0xe6a1f1fa61de9b5b!2sAerodromul%20Geam%C4%83na!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro"
+                            width="100%" height="250" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPONSORI -->
+        <section id="sponsori" class="section">
+            <h1 class="neon-title">Sponsori si Parteneri</h1>
+            <div class="sponsor-grid">
+                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
+                    <img src="https://via.placeholder.com/160x90/0a0a14/ff007f?text=Logo+1" alt="Sponsor 1"
+                        class="sponsor-logo">
+                    <span class="sponsor-name">Sponsor Platinum</span>
+                </a>
+                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
+                    <img src="https://via.placeholder.com/160x90/0a0a14/00e5ff?text=Logo+2" alt="Sponsor 2"
+                        class="sponsor-logo">
+                    <span class="sponsor-name">Sponsor Gold</span>
+                </a>
+                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
+                    <img src="https://via.placeholder.com/160x90/0a0a14/9d00ff?text=Logo+3" alt="Sponsor 3"
+                        class="sponsor-logo">
+                    <span class="sponsor-name">Sponsor Silver 1</span>
+                </a>
+                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
+                    <img src="https://via.placeholder.com/160x90/0a0a14/ffcc00?text=Logo+4" alt="Sponsor 4"
+                        class="sponsor-logo">
+                    <span class="sponsor-name">Sponsor Silver 2</span>
+                </a>
+                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
+                    <img src="https://via.placeholder.com/160x90/0a0a14/ff007f?text=Logo+5" alt="Sponsor 5"
+                        class="sponsor-logo">
+                    <span class="sponsor-name">Sponsor Silver 3</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-glass">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-title-wrapper">
+                    <h2 class="cursive-neon">DroWo 2026</h2>
+                    <span class="by-euroavia">by Euroavia Bucuresti</span>
+                </div>
+                <p>Inginerie. Pasiuni. Viitor.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/euroavia_bucuresti/" target="_blank" class="social-icon"
+                    aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/euroavia.bucuresti" target="_blank" class="social-icon"
+                    aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/euroavia-bucure%C8%99ti/" target="_blank" class="social-icon"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.youtube.com/@euroaviabucuresti" target="_blank" class="social-icon"
+                    aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Euroavia București. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- BURGER MENU LOGIC ---
+        const menuBtn = document.querySelector('#mobile-menu');
+        const navContainer = document.querySelector('.nav-container');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('is-active');
+            navContainer.classList.toggle('active');
+        });
+
+        // Închidere meniu la click pe link
+        document.querySelectorAll('.nav-container a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('is-active');
+                navContainer.classList.remove('active');
+            });
+        });
+
+        // --- CUSTOM SMOOTH SCROLL ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    const headerOffset = 100;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
