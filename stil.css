@@ -79,7 +79,7 @@ body {
     font-weight: bold;
 }
 
-.logo-img { height: 45px; margin-bottom: 5px; }
+.logo-img { height: 85px; margin-bottom: 5px; }
 
 /* --- BUTOANE ȘI LINK-URI (18PX + NEON) --- */
 .nav-left a, .btn-scroll {
@@ -290,7 +290,7 @@ p { line-height: 1.8; font-size: 18px; color: #b0b8c4; }
     box-shadow: 0 0 5px rgb(13, 195, 228);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
     .container-header { padding: 0 20px; }
     .menu-toggle { display: block; }
 
