@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 21, 2026 at 05:47 PM
+-- Generation Time: Mar 09, 2026 at 09:15 AM
 -- Server version: 11.8.3-MariaDB-log
 -- PHP Version: 7.2.34
 
@@ -46,9 +46,6 @@ CREATE TABLE `candidati` (
   `data_inscriere` timestamp NULL DEFAULT current_timestamp(),
   `status` varchar(50) DEFAULT 'neverificat'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-
-
 
 --
 -- Indexes for dumped tables
