@@ -1377,6 +1377,7 @@ p {
     justify-content: space-between;
     text-align: center;
     min-height: 320px;
+    border: 1px solid var(--glass-border);
 }
 
 .quiz-icon {
@@ -1395,6 +1396,7 @@ p {
     font-size: 16px;
     color: #b0bac5;
     margin-bottom: 30px;
+    line-height: 1.6;
     flex-grow: 1; /* Împinge butoanele să fie aliniate la bază */
 }
 
