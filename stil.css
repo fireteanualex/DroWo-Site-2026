@@ -20,6 +20,12 @@
     --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 900px) {
+    body {
+        padding: 0px 50px;
+    }
+}
+
 /* --- RESET & BASE --- */
 html {
     scroll-behavior: auto;
@@ -940,6 +946,7 @@ p {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.35);
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
 .footer-logo p {

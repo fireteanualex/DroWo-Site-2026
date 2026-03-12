@@ -38,7 +38,7 @@
                 <a href="#gallery-hero" class="nav-btn">Galerie</a>
                 <a href="../index.html#training" class="nav-btn">Trainings</a>
                 <a href="../index.html#faq" class="nav-btn">FAQ</a>
-                <a href="../login.html" class="btn-login">ÎNSCRIE-TE</a>
+                <a href="https://forms.gle/VkUStjwMYHUfitMu6" target="_blank" class="btn-login">ÎNSCRIE-TE</a>
             </nav>
         </div>
     </header>
@@ -212,8 +212,9 @@
             <div class="join-section" style="margin-top: 80px; text-align: center;">
                 <h2
                     style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 28px; margin-bottom: 25px;">
-                    Vrei să faci parte din ediția de anul acesta? Alătură-te nouă!</h2>
-                <a href="../index.html#register" class="btn-neon">ÎNSCRIE-TE ACUM</a>
+                    Vrei să faci parte din ediția de anul acesta? Alătură-te prin a completa formularul de înregistrare!
+                </h2>
+                <a href="https://forms.gle/VkUStjwMYHUfitMu6" target="_blank" class="btn-neon">ÎNSCRIE-TE ACUM</a>
             </div>
         </section>
     </main>
@@ -233,25 +234,26 @@
                     <h2 class="cursive-neon">Drone Workshop</h2>
                     <a href="https://euroavia-bucuresti.ro/" target="_blank" class="by-euroavia">by Euroavia
                         Bucuresti</a>
+                    <a href="mailto:office@euroavia-bucuresti.ro" class="by-euroavia">office@euroavia-bucuresti.ro</a>
+                    <br>
                 </div>
-                <p>Engineering the sky.</p>
+                <p>Building the wings of your future!</p>
             </div>
             <div class="footer-socials">
-                <a href="https://www.instagram.com/euroavia_bucuresti/" target="_blank" class="social-icon"
+                <a href="https://www.instagram.com/euroavia.bucuresti/" target="_blank" class="social-icon"
                     aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com/euroavia.bucuresti" target="_blank" class="social-icon"
+                <a href="https://www.facebook.com/EUROAVIABucuresti" target="_blank" class="social-icon"
                     aria-label="Facebook">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="https://www.linkedin.com/company/euroavia-bucure%C8%99ti/" target="_blank" class="social-icon"
+                <a href="https://www.linkedin.com/company/euroavia-bucuresti/" target="_blank" class="social-icon"
                     aria-label="LinkedIn">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://www.youtube.com/@euroaviabucuresti" target="_blank" class="social-icon"
-                    aria-label="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
+                <a href="https://nova.campus.pub.ro" target="_blank" class="social-icon" aria-label="fa-gift">
+                    <i class="fa fa-gift"></i>
                 </a>
             </div>
             <div class="footer-copyright">
@@ -295,21 +297,7 @@
             });
         });
 
-        // --- DOMCONTENTLOADED EFFECTS ---
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(sec => sec.classList.add('hidden-section'));
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            sections.forEach(sec => observer.observe(sec));
-        });
     </script>
 
     <script>
