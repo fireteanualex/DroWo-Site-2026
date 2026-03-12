@@ -1359,6 +1359,56 @@ p {
     transform: translateY(-50%) scale(1.1);
 }
 
+/* =============================================
+   QUIZ SECTION STYLES
+   ============================================= */
+.quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Așezare pe 2 coloane */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.quiz-card {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    min-height: 320px;
+}
+
+.quiz-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: var(--neon-blue);
+    text-shadow: 0 0 15px var(--neon-blue);
+}
+
+.quiz-card h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.quiz-card p {
+    font-size: 16px;
+    color: #b0bac5;
+    margin-bottom: 30px;
+    flex-grow: 1; /* Împinge butoanele să fie aliniate la bază */
+}
+
+/* Responsivitate pentru mobil: 1 coloană pe ecrane mici */
+@media (max-width: 900px) {
+    .quiz-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .quiz-card {
+        min-height: auto;
+    }
+}
+
 @media (max-width: 500px) {
     .logo-img {
         height: 60px;
@@ -1381,3 +1431,4 @@ p {
 .lightbox-next {
     right: 20px;
 }
+
