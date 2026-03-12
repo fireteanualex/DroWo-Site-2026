@@ -37,8 +37,9 @@
                 <a href="#about" class="nav-btn">About</a>
                 <a href="/gallery" class="nav-btn">Galerie</a>
                 <a href="#training" class="nav-btn">Trainings</a>
+                <a href="#quiz-uri" class="nav-btn">Quiz-uri</a>
                 <a href="#faq" class="nav-btn">FAQ</a>
-                <a href="/login.html" class="btn-login">Înscrie-te</a>
+                <a href="/login.html" class="btn-login">Login</a>
             </nav>
         </div>
     </header>
@@ -139,6 +140,54 @@
             </div>
         </section>
 
+        <!-- TRAINERI -->
+        <section id="traineri" class="section glass-card hidden-section">
+        <h1 class="neon-title">Traineri Ediția 5</h1>
+        <p class="section-subtitle">Echipa de elită care te va ghida în lumea roboticii și a zborului autonom.</p>
+
+        <div class="trainer-grid">
+            <div class="trainer-card">
+            <div class="trainer-card-inner">
+                <div class="trainer-card-image" style="background-image: url('trainers/Trainer1.png');"></div>
+                
+                <div class="trainer-overlay">
+                <div class="trainer-info">
+                    <h3 class="trainer-name">Andrei Ionescu</h3>
+                    <p class="trainer-title">Expert FPV & Pilot Drone</p>
+                </div>
+                <a href="#" class="btn-trainer-view">Vezi Profil</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="trainer-card">
+            <div class="trainer-card-inner">
+                <div class="trainer-card-image" style="background-image: url('trainers/Trainer2.png');"></div>
+                <div class="trainer-overlay">
+                <div class="trainer-info">
+                    <h3 class="trainer-name">Elena Popescu</h3>
+                    <p class="trainer-title">Inginer Electronist</p>
+                </div>
+                <a href="#" class="btn-trainer-view">Vezi Profil</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="trainer-card">
+            <div class="trainer-card-inner">
+                <div class="trainer-card-image" style="background-image: url('trainers/trainer3.jpg');"></div>
+                <div class="trainer-overlay">
+                <div class="trainer-info">
+                    <h3 class="trainer-name">Matei Stan</h3>
+                    <p class="trainer-title">Software Dev. Betaflight</p>
+                </div>
+                <a href="#" class="btn-trainer-view">Vezi Profil</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
         <!-- TRAINING -->
         <section id="training" class="section">
             <h1 class="neon-title">Trainings</h1>
@@ -185,10 +234,10 @@
             
             <div class="quiz-grid">
                 <div class="quiz-card glass-pod">
-                    <div class="quiz-icon"><i class="fa-solid fa-book-open"></i></div>
-                    <h3 class="card-title">Introducere</h3>
-                    <p>Primul quiz cu care va veti confunta. Conține întrebări esențiale din training-urile de <strong>INTRODUCERE</strong>, <strong>LEGISLAȚIE</strong> și <strong>SAFETY</strong>.</p>
-                    <a href="quiz-introducere.php" class="btn-neon">Începe Quiz</a>
+                    <div class="quiz-icon"><i class="fa-solid fa-drafting-compass"></i></div>
+                    <h3 class="card-title">Quiz Design</h3>
+                    <p>Primul quiz cu care va veti confunta, unde aveti de-a face cu partea de DESIGN a dronelor noastre.</p>
+                    <a href="quiz-design.php" class="btn-neon">Începe Quiz</a>
                 </div>
 
                 <div class="quiz-card glass-pod">
@@ -197,20 +246,47 @@
                     <p>Include intrebari din partea de ELECTRONICA pentru a va verifica cunostintele acumulate la training.</p>
                     <a href="quiz-electronica.php" class="btn-neon">Începe Quiz</a>
                 </div>
-
-                <div class="quiz-card glass-pod">
-                    <div class="quiz-icon"><i class="fa-solid fa-drafting-compass"></i></div>
-                    <h3 class="card-title">Design</h3>
-                    <p>In cel de-al treilea QUIZ aveti de-a face cu partea de DESIGN a dronelor noastre, inca putin si ajungeti la sfarsit.</p>
-                    <a href="quiz-design.php" class="btn-neon">Începe Quiz</a>
-                </div>
-
+                
                 <div class="quiz-card glass-pod">
                     <div class="quiz-icon"><i class="fa-solid fa-code"></i></div>
                     <h3 class="card-title">Betaflight</h3>
-                    <p>Ultimul QUIZ cu care va mai bateti capul evenimentul acesta. Partea de Betaflight poate reprezenta o provocare.</p>
+                    <p>Al treilea QUIZ cu care va veti bate capul. Partea de Betaflight poate reprezenta o provocare.</p>
                     <a href="quiz-betaflight.php" class="btn-neon">Începe Quiz</a>
                 </div>
+
+                <div class="quiz-card glass-pod">
+                    <div class="quiz-icon"><i class="fa-solid fa-fire-burner"></i></div>
+                    <h3 class="card-title">Quiz Soldering</h3>
+                    <p>Al patrulea si ultimul QUIZ cu care aveti de-a face. Va trebui sa va folositi de cunostintele acumulate in training-ul de soldering.</p>
+                    <a href="quiz-soldering.php" class="btn-neon">Începe Quiz</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEADERBOARD -->
+        <section id="leaderboard" class="section glass-card hidden-section">
+            <h1 class="neon-title">Leaderboard</h1>
+            <p style="margin-bottom: 40px;">Clasamentul în timp real al participanților bazat pe punctajele obținute.</p>
+            
+            <div class="leaderboard-table glass-pod">
+                <div class="leaderboard-header">
+                    <span>RANG</span>
+                    <span>PARTICIPANT</span>
+                    <span>PUNCTAJ</span>
+                </div>
+                
+                <div class="leaderboard-body">
+                    <div class="leaderboard-row">
+                        <span class="rank">#1</span>
+                        <span class="name">Cristian Marinescu</span>
+                        <span class="score">950 pts</span>
+                    </div>
+                    <div class="leaderboard-row">
+                        <span class="rank">#2</span>
+                        <span class="name">Ioana Vasilescu</span>
+                        <span class="score">890 pts</span>
+                    </div>
+                    </div>
             </div>
         </section>
 
