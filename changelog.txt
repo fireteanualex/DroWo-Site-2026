@@ -1,0 +1,4 @@
+
+- Drone image in hero: Image should cover it's entire half of section. Contain setting, overflow allowed.
+
+- Generate neon pink favicons for each training and save them in the images folder
