@@ -20,9 +20,9 @@
     --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 500px) {
     body {
-        padding: 0px 50px;
+        padding: 0px 3%;
     }
 }
 
@@ -45,6 +45,7 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     text-align: center;
+    padding: 0px 5%;
 }
 
 /* =============================================
@@ -1485,8 +1486,8 @@ p {
 .trainer-card-image {
     width: 100%;
     height: 100%;
-    /* contain: asigură vizibilitatea completă a pozei */
-    background-size: contain;
+    /* cover: acopera tot cardul */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.6s ease;
@@ -1501,66 +1502,88 @@ p {
     bottom: 0;
     left: 0;
     width: 100%;
-    /* Gradient pentru lizibilitatea textului */
-    background: linear-gradient(to top, rgba(10, 5, 15, 0.95) 0%, rgba(10, 5, 15, 0.4) 60%, transparent 100%);
+    /* Gradient puternic pentru lizibilitatea textului */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 40%, transparent 100%);
     padding: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
+    text-align: center;
     height: 100%;
     transition: padding-bottom 0.4s ease;
 }
 
 .trainer-name {
     font-family: 'Montserrat', sans-serif;
-    /* */
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 400;
     color: #fff;
     margin-bottom: 5px;
     text-transform: uppercase;
-    text-align: left;
-    /* Aliniat la stânga pentru profil */
+    text-align: center;
 }
 
 .trainer-title {
-    font-size: 13px;
-    color: var(--neon-blue);
-    /* */
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: left;
+    font-family: 'NEONCITY Script', 'Orbitron', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    text-shadow:
+        0 0 10px var(--neon-pink),
+        0 0 20px var(--neon-pink),
+        0 0 40px var(--neon-purple),
+        0 0 60px var(--neon-purple);
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 5px 0 10px 0;
 }
 
-.btn-trainer-view {
+.trainer-social {
+    color: #fff;
+    font-size: 28px;
+    transition: var(--transition);
     text-decoration: none;
-    background: var(--chrome-gradient);
-    /* */
-    color: #000;
-    padding: 10px 20px;
-    border-radius: var(--radius-sm);
-    /* */
+}
+
+.trainer-social:hover {
+    color: var(--neon-pink);
+    transform: scale(1.1);
+    text-shadow: 0 0 10px var(--neon-pink);
+}
+
+/* =============================================
+   TEAM TOGGLE
+   ============================================= */
+.team-toggle-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.team-toggle-btn {
+    background: var(--glass-bg-light);
+    color: #fff;
+    border: 1px solid var(--glass-border);
+    padding: 12px 28px;
+    border-radius: var(--radius-md);
     font-family: 'Orbitron', sans-serif;
-    /* */
+    font-size: 15px;
     font-weight: 700;
-    font-size: 12px;
-    margin-top: 15px;
-    opacity: 0;
-    transform: translateY(15px);
-    transition: all 0.4s ease;
-    display: inline-block;
-    width: fit-content;
+    cursor: pointer;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
 }
 
-.trainer-card:hover .btn-trainer-view {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.trainer-card:hover .trainer-overlay {
-    padding-bottom: 35px;
+.team-toggle-btn.active,
+.team-toggle-btn:hover {
+    background: rgba(0, 229, 255, 0.15);
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+    color: var(--neon-blue);
 }
 
 /* =============================================
@@ -1633,4 +1656,107 @@ p {
 
 .lightbox-next {
     right: 20px;
+}
+
+@media (max-width: 400px) {
+    .neon-text {
+        font-size: 56px;
+    }
+
+    .neon-title {
+        font-size: 56px;
+    }
+
+    .gallery-title {
+        font-size: 42px;
+    }
+
+    .footer-glass .cursive-neon {
+        font-size: 32px;
+    }
+
+    .card-title,
+    .card-title-location {
+        font-size: 20px;
+    }
+
+    .hero-date-place {
+        font-size: 16px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+    }
+
+    .info-item {
+        min-width: 100%;
+        padding: 12px 16px;
+    }
+
+    .info-text .value {
+        font-size: 14px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+
+    .card-body p,
+    .location-card p,
+    .quiz-card p {
+        font-size: 14px;
+    }
+
+    .trainer-name {
+        font-size: 18px;
+    }
+
+    .trainer-title {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 485px) {
+
+    .leaderboard-header,
+    .leaderboard-row {
+        padding: 12px 15px;
+        display: grid;
+        grid-template-columns: 22% 48% 30%;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .leaderboard-header span,
+    .leaderboard-row span {
+        font-size: 12px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .leaderboard-header span:first-child,
+    .leaderboard-row span:first-child {
+        text-align: left;
+    }
+
+    .leaderboard-header span:last-child,
+    .leaderboard-row span:last-child {
+        text-align: right;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .leaderboard-header,
+    .leaderboard-row {
+        padding: 10px 8px;
+        grid-template-columns: 22% 45% 33%;
+    }
+
+    .leaderboard-header span,
+    .leaderboard-row span {
+        font-size: 10px;
+    }
 }
