@@ -1388,3 +1388,249 @@ p {
 .lightbox-next {
     right: 20px;
 }
+
+/* =============================================
+   QUIZ SECTION STYLES
+   ============================================= */
+.quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Așezare pe 2 coloane */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.quiz-card {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    min-height: 320px;
+    border: 1px solid var(--glass-border);
+}
+
+.quiz-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: var(--neon-blue);
+    text-shadow: 0 0 15px var(--neon-blue);
+}
+
+.quiz-card h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.quiz-card p {
+    font-size: 16px;
+    color: #b0bac5;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    flex-grow: 1;
+    /* Împinge butoanele să fie aliniate la bază */
+}
+
+/* Responsivitate pentru mobil: 1 coloană pe ecrane mici */
+@media (max-width: 900px) {
+    .quiz-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-card {
+        min-height: auto;
+    }
+}
+
+/* =============================================
+   TRAINER SECTION STYLES
+   ============================================= */
+.trainer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.trainer-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    /* */
+    border: 1px solid var(--glass-border);
+    /* */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    aspect-ratio: 3 / 4;
+    /* Păstrează forma verticală */
+    background: #000;
+    /* Fundal negru pentru a masca marginile dacă poza e mai mică */
+}
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+    /* Glow cyan */
+}
+
+.trainer-card-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.trainer-card-image {
+    width: 100%;
+    height: 100%;
+    /* contain: asigură vizibilitatea completă a pozei */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.6s ease;
+}
+
+.trainer-card:hover .trainer-card-image {
+    transform: scale(1.05);
+}
+
+.trainer-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Gradient pentru lizibilitatea textului */
+    background: linear-gradient(to top, rgba(10, 5, 15, 0.95) 0%, rgba(10, 5, 15, 0.4) 60%, transparent 100%);
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    transition: padding-bottom 0.4s ease;
+}
+
+.trainer-name {
+    font-family: 'Montserrat', sans-serif;
+    /* */
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    /* Aliniat la stânga pentru profil */
+}
+
+.trainer-title {
+    font-size: 13px;
+    color: var(--neon-blue);
+    /* */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.btn-trainer-view {
+    text-decoration: none;
+    background: var(--chrome-gradient);
+    /* */
+    color: #000;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    /* */
+    font-family: 'Orbitron', sans-serif;
+    /* */
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 15px;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.4s ease;
+    display: inline-block;
+    width: fit-content;
+}
+
+.trainer-card:hover .btn-trainer-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.trainer-card:hover .trainer-overlay {
+    padding-bottom: 35px;
+}
+
+/* =============================================
+   LEADERBOARD SECTION STYLES
+   ============================================= */
+.leaderboard-table {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(0, 229, 255, 0.1);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: var(--neon-blue);
+    border-bottom: 1px solid var(--neon-blue);
+}
+
+.leaderboard-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+}
+
+.leaderboard-row:hover {
+    background: rgba(255, 0, 127, 0.05);
+    transform: scale(1.02);
+}
+
+.leaderboard-row .rank {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--neon-pink);
+    font-weight: 700;
+}
+
+.leaderboard-row .score {
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+    .logo-img {
+        height: 60px;
+    }
+
+    .menu-toggle {
+        transform: scale(0.75);
+        margin: 0;
+    }
+
+    .container-header {
+        padding: 5px 15px;
+    }
+
+    .trainer-name {
+        font-size: 20px;
+    }
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
