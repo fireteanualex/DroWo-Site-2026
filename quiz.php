@@ -21,7 +21,7 @@ $questions = [
 <body class="content-wrapper">
     <header class="header-fix">
         <div class="container-header">
-            <a href="Landing.html" class="logo-link">
+            <a href="index.html" class="logo-link">
                 <img src="images/Logo.svg" alt="logo" class="logo-img">
             </a>
             <h2 class="edition" style="margin: 0; font-size: 14px;">MODUL QUIZ</h2>
