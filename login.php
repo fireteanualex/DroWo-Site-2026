@@ -30,7 +30,7 @@
         </form>
         
         <div style="margin-top: 15px;">
-            <a href="Landing.html" style="font-size: 11px; color: rgba(255,255,255,0.3); text-decoration: none; text-transform: uppercase;">← Înapoi la Landing Page</a>
+            <a href="index.html" style="font-size: 11px; color: rgba(255,255,255,0.3); text-decoration: none; text-transform: uppercase;">← Înapoi la pagina principală</a>
         </div>
     </div>
 
