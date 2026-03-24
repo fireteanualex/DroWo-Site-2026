@@ -1924,13 +1924,152 @@ p {
     width: 100%;
 }
 
+/* =============================================
+   SCHEDULE PAGE - HIGH VISIBILITY UPDATES
+   ============================================= */
+
+/* Main Container for the Day Card */
 .day-card.schedule-content {
     width: 100%;
-    margin-top: 20px;
-    /* Limits size for better readability on desktop */
+    padding: 40px;
+    /* Increased padding */
+    margin: 0 auto;
 }
 
-/* Styling for location section specifically for schedule page */
-.location-card p {
-    text-align: center;
+/* Day Date (e.g., Vineri 27 Martie) */
+.day-date {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--neon-pink);
+    font-weight: 700;
+    font-size: 1.8rem;
+    /* Bigger */
+    text-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Location Text under the Date */
+.day-location {
+    font-size: 1.2rem;
+    /* Bigger */
+    color: #ffffff;
+    /* Brighter */
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Timeline Row Layout */
+.time-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    /* More breathing room */
+    background: rgba(255, 255, 255, 0.07);
+    /* Slightly lighter background */
+    border-radius: var(--radius-md);
+    font-size: 1.2rem;
+    /* Much bigger text */
+    border-left: 5px solid transparent;
+    /* Thicker accent line */
+    margin-bottom: 5px;
+    transition: var(--transition);
+}
+
+/* The Time Column */
+.time-row span:first-child {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    /* Switched from gray to white */
+    min-width: 160px;
+    letter-spacing: 1px;
+}
+
+/* The Activity Column */
+.time-row span:last-child {
+    font-weight: 600;
+    color: #ffffff;
+    /* Pure white for maximum contrast */
+    text-align: right;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover effect to make rows "pop" */
+.time-row:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateX(5px);
+}
+
+/* --- LIGHTER TONE HIGHLIGHTS --- */
+/* We use more vibrant versions of your theme colors */
+
+.highlight-pink {
+    border-left-color: var(--neon-pink);
+    background: rgba(255, 0, 127, 0.15);
+}
+
+.highlight-pink span:last-child {
+    color: #ff80bf;
+    /* Lighter pink */
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+}
+
+.highlight-blue {
+    border-left-color: var(--neon-blue);
+    background: rgba(0, 229, 255, 0.15);
+}
+
+.highlight-blue span:last-child {
+    color: #80f2ff;
+    /* Lighter blue */
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+.highlight-purple {
+    border-left-color: var(--neon-purple);
+    background: rgba(157, 0, 255, 0.15);
+}
+
+.highlight-purple span:last-child {
+    color: #ce80ff;
+    /* Lighter purple */
+    text-shadow: 0 0 10px rgba(157, 0, 255, 0.5);
+}
+
+.highlight-gold {
+    border-left-color: var(--neon-gold);
+    background: rgba(255, 204, 0, 0.15);
+}
+
+.highlight-gold span:last-child {
+    color: #ffe680;
+    /* Lighter gold */
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+/* Mobile Adjustments for Big Text */
+@media (max-width: 600px) {
+    .day-card.schedule-content {
+        padding: 20px 15px;
+    }
+
+    .time-row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .time-row span:last-child {
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .day-date {
+        font-size: 1.4rem;
+    }
 }

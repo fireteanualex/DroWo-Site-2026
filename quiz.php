@@ -1,7 +1,7 @@
 <?php
 session_start();
 date_default_timezone_set('Europe/Bucharest');
-require '../db.php';
+require 'db.php';
 
 if (!isset($_SESSION['team_id'])) { 
     header("Location: login.php"); 

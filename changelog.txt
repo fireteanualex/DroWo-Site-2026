@@ -4,4 +4,5 @@
 - Sectiunea de Leaderboard afiseaza punctajul in timp real
 - Quiz-uri protejate (Take quiz cu cod de quiz si quiz-ul selectat)
 - Creare pagini quiz-uri
+- Add a checkbox to make password visible in login page
 - 
