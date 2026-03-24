@@ -38,7 +38,7 @@
                 <a href="/gallery" class="nav-btn">Galerie</a>
                 <a href="#training" class="nav-btn">Trainings</a>
                 <a href="#faq" class="nav-btn">FAQ</a>
-                <a href="https://forms.gle/VkUStjwMYHUfitMu6" target="_blank" class="btn-login">Înscrie-te</a>
+                <a href="login.php" target="_blank" class="btn-login">Login</a>
             </nav>
         </div>
     </header>
@@ -52,7 +52,7 @@
                 DroWo. Învață să îți construiești propria dronă de la zero!</p>
             <div class="hero-btns">
                 <a href="#about" class="btn-outline">DESPRE</a>
-                <a href="https://forms.gle/VkUStjwMYHUfitMu6" target="_blank" class="btn-neon">INSCRIE-TE ACUM</a>
+                <a href="#leaderboard" class="btn-neon">LEADERBOARD</a>
                 <section class="info-strip" style="margin-top: 25px; justify-content: flex-start; padding: 0;">
                     <div class="info-item glass-pod">
                         <i class="fa-regular fa-calendar"></i>
@@ -140,21 +140,27 @@
             </div>
         </section>
 
-        <section id="traineri" class="section glass-card hidden-section">
-            <h1 class="neon-title">Meet the Trainers</h1>
-            <p class="section-subtitle">Echipa de elită care te va ghida în lumea roboticii și a zborului autonom.</p>
+        <section id="echipa" class="section glass-card hidden-section">
+            <h1 class="neon-title" id="team-title">Meet the Trainers</h1>
+            <p class="section-subtitle" id="team-subtitle">Echipa de elită care te va ghida în lumea roboticii și a
+                zborului autonom.</p>
 
-            <div class="trainer-grid">
+            <div class="team-toggle-container">
+                <button class="team-toggle-btn active" id="btn-trainers">Trainers</button>
+                <button class="team-toggle-btn" id="btn-orga">ORGA Team</button>
+            </div>
+
+            <div class="trainer-grid" id="grid-trainers">
                 <div class="trainer-card">
                     <div class="trainer-card-inner">
                         <div class="trainer-card-image" style="background-image: url('trainers/Trainer1.png');"></div>
-
                         <div class="trainer-overlay">
                             <div class="trainer-info">
                                 <h3 class="trainer-name">Andrei Ionescu</h3>
-                                <p class="trainer-title">Expert FPV & Pilot Drone</p>
+                                <p class="trainer-title">Expert FPV and Drone Pilot</p>
                             </div>
-                            <a href="#" class="btn-trainer-view">Vezi Profil</a>
+                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -167,7 +173,8 @@
                                 <h3 class="trainer-name">Elena Popescu</h3>
                                 <p class="trainer-title">Inginer Electronist</p>
                             </div>
-                            <a href="#" class="btn-trainer-view">Vezi Profil</a>
+                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +187,41 @@
                                 <h3 class="trainer-name">Matei Stan</h3>
                                 <p class="trainer-title">Software Dev. Betaflight</p>
                             </div>
-                            <a href="#" class="btn-trainer-view">Vezi Profil</a>
+                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trainer-grid" id="grid-orga" style="display: none;">
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image"
+                            style="background-image: url('https://via.placeholder.com/400x500/0a0a14/00e5ff?text=Orga+1');">
+                        </div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Ionut Radu</h3>
+                                <p class="trainer-title">Project Manager</p>
+                            </div>
+                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image"
+                            style="background-image: url('https://via.placeholder.com/400x500/0a0a14/ff007f?text=Orga+2');">
+                        </div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Maria Tudor</h3>
+                                <p class="trainer-title">PR & Media</p>
+                            </div>
+                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -372,9 +413,31 @@
             </div>
         </section>
 
+        <!-- PARTENERI -->
+        <section id="parteneri" class="section">
+            <h1 class="neon-title">Parteneri</h1>
+            <div class="sponsor-grid">
+                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
+                    <img src="https://via.placeholder.com/160x90/0a0a14/00e5ff?text=Partner+1" alt="Partner 1"
+                        class="sponsor-logo">
+                    <span class="sponsor-name">Partener Principal</span>
+                </a>
+                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
+                    <img src="https://via.placeholder.com/160x90/0a0a14/ff007f?text=Partner+2" alt="Partner 2"
+                        class="sponsor-logo">
+                    <span class="sponsor-name">Partener Strategic</span>
+                </a>
+                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
+                    <img src="https://via.placeholder.com/160x90/0a0a14/9d00ff?text=Partner+3" alt="Partner 3"
+                        class="sponsor-logo">
+                    <span class="sponsor-name">Partener Media</span>
+                </a>
+            </div>
+        </section>
+
         <!-- SPONSORI -->
-        <section id="sponsori" class="section" style="display: none;">
-            <h1 class="neon-title">Sponsori si Parteneri</h1>
+        <section id="sponsori" class="section">
+            <h1 class="neon-title">Sponsori</h1>
             <div class="sponsor-grid">
                 <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
                     <img src="https://via.placeholder.com/160x90/0a0a14/ff007f?text=Logo+1" alt="Sponsor 1"
@@ -505,6 +568,34 @@
                 }
             }
         });
+
+        // --- TEAM TOGGLE LOGIC ---
+        const btnTrainers = document.getElementById('btn-trainers');
+        const btnOrga = document.getElementById('btn-orga');
+        const gridTrainers = document.getElementById('grid-trainers');
+        const gridOrga = document.getElementById('grid-orga');
+        const titleTeam = document.getElementById('team-title');
+        const subtitleTeam = document.getElementById('team-subtitle');
+
+        if (btnTrainers && btnOrga) {
+            btnTrainers.addEventListener('click', () => {
+                btnTrainers.classList.add('active');
+                btnOrga.classList.remove('active');
+                gridTrainers.style.display = 'grid';
+                gridOrga.style.display = 'none';
+                titleTeam.textContent = 'Meet the Trainers';
+                subtitleTeam.textContent = 'Echipa de elită care te va ghida în lumea roboticii și a zborului autonom.';
+            });
+
+            btnOrga.addEventListener('click', () => {
+                btnOrga.classList.add('active');
+                btnTrainers.classList.remove('active');
+                gridTrainers.style.display = 'none';
+                gridOrga.style.display = 'grid';
+                titleTeam.textContent = 'Meet the Orga Team';
+                subtitleTeam.textContent = 'Echipa dedicată care face acest eveniment posibil.';
+            });
+        }
     </script>
 </body>
 

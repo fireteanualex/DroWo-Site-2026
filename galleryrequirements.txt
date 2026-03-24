@@ -1,0 +1,9 @@
+Generate me an gallery page that:
+- Has an hero to it with: (One side) Gallery title, short description, scroll down button, and on the other collage of 3 images stacked one on top of another like a stack of cards.
+- Uses all images and videos (Shuffled) from gallery directory (If it helps with loading speeds, with lazy tag on)
+- Videos autoplay on loop
+- Respects same theme as landing page (INCLUDING FOR TITLE AND EVERYTHING)
+- Has a grid of images
+- Images are clickable and open in a lightbox
+- Lightbox has a close button and navigation arrows
+- Images are displayed in a responsive grid
