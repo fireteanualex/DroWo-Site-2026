@@ -73,7 +73,7 @@
                         <i class="fa-solid fa-location-dot"></i>
                         <div class="info-text">
                             <span class="label">UNDE?</span>
-                            <span class="value">UNSTPB București</span>
+                            <span class="value">UNSTPB București & Aerodrom Geamăna</span>
                         </div>
                     </div>
                 </section>
@@ -161,41 +161,325 @@
             <div class="trainer-grid" id="grid-trainers">
                 <div class="trainer-card">
                     <div class="trainer-card-inner">
-                        <div class="trainer-card-image" style="background-image: url('trainers/Trainer1.png');"></div>
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/AlexandraChitic_Team_Leader_Tehnic.jpg');"></div>
                         <div class="trainer-overlay">
                             <div class="trainer-info">
-                                <h3 class="trainer-name">Andrei Ionescu</h3>
-                                <p class="trainer-title">Expert FPV and Drone Pilot</p>
+                                <h3 class="trainer-name">Alexandra Chitic</h3>
+                                <p class="trainer-title">Team Leader Tehnic</p>
                             </div>
-                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                            <a href="https://www.instagram.com/alexandra.maria.27?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="trainer-social" aria-label="Instagram" target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <div class="trainer-card">
                     <div class="trainer-card-inner">
-                        <div class="trainer-card-image" style="background-image: url('trainers/Trainer2.png');"></div>
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Nica Daniel_Team_Leader_Subsystem_Electronica.jpg');"></div>
                         <div class="trainer-overlay">
                             <div class="trainer-info">
-                                <h3 class="trainer-name">Elena Popescu</h3>
-                                <p class="trainer-title">Inginer Electronist</p>
+                                <h3 class="trainer-name">Daniel Nica</h3>
+                                <p class="trainer-title">Team Leader Subsystem Electronica</p>
                             </div>
-                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                            <a href="https://www.instagram.com/_nica.daniel/" class="trainer-social" aria-label="Instagram" target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <div class="trainer-card">
                     <div class="trainer-card-inner">
-                        <div class="trainer-card-image" style="background-image: url('trainers/trainer3.jpg');"></div>
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Munteanu Cezar_Team_Leader_Subsystem_Electronica.jpg');"></div>
                         <div class="trainer-overlay">
                             <div class="trainer-info">
-                                <h3 class="trainer-name">Matei Stan</h3>
-                                <p class="trainer-title">Software Dev. Betaflight</p>
+                                <h3 class="trainer-name">Cezar Munteanu</h3>
+                                <p class="trainer-title">Team Leader Subsystem Electronica</p>
                             </div>
-                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                            <a href="https://www.instagram.com/cezar_mnt?igsh=M25oN3p6YXh2NGlr&utm_source=qr" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Liviu_Marin_Team_Leader_Subsystem_Betaflight.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Liviu Marin</h3>
+                                <p class="trainer-title">Team Leader Subsystem Betaflight</p>
+                            </div>
+                            <a href="https://www.instagram.com/liviu_marin3/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Dragos_Aflori_Team_Leader_Subsystem_Design.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Dragos Aflori</h3>
+                                <p class="trainer-title">Team Leader Subsystem Design</p>
+                            </div>
+                            <a href="https://www.instagram.com/dragos.aflori?igsh=MW16aGR2M3Z4M3MwcQ==" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Bianca Stanciu_Trainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Bianca Stanciu</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/__bibi_cris__?igsh=MW4wOGVpMHh3anJ4OA%3D%3D&utm_source=qr" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Alexia_Popa-Trainer.PNG');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Alexia Popa</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/alexiaa.popa/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/AnaMelniciuc-Trainer.jpeg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Ana Melniciuc</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Antonia_Onisoru_Trainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Antonia Onisoru</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Apostolescu_Lucian_Trainer.jpeg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Apostolescu Lucian</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Barticel Nicolae_Trainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Barticel Nicolae</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/nicolaebarticel?igsh=MTB0MDVib3JvcTVhcg==" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Bănică_Diana_Trainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Bănică Diana</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/dianaabaanica?igsh=cTd5OXV1cDZseXY5&utm_source=qr" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Canciu_Daria_Trainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Canciu Daria</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Costandache_Anastasia_Trainer.jpeg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Costandache Anastasia</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/anastasia_costandache?igsh=MW8xZmo4ZXE3aDM2MA%3D%3D&utm_source=qr" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Goia_Catalin-Ioan_Trainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Goia Catalin-Ioan</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Marina Petru_Trainer .jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Marina Petru</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/marinapetru/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Mariut_Elisa_TRainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Mariut Elisa TRainer</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/elisa.mariut?igsh=djJmamlzZDlpeHk0&utm_source=qr" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Nechita Sabina_Trainer.JPG');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Nechita Sabina</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/binutza.nec/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Patic Gabriel_Trainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Patic Gabriel</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/gabrielthevoltaic?igsh=OHd1Y2ticWJ3ZHdv" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Porancea Ana-Sofia_Trainer.jpeg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Porancea Ana-Sofia</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Sirbu Stefan_Trainer.png');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Sirbu Stefan</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/cezar_mnt?igsh=M25oN3p6YXh2NGlr&utm_source=qr" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Sînziana Bălăceanu_Trainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Sînziana Bălăceanu</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Teodor Catrina_Trainer.png');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Teodor Catrina</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/teo236356?igsh=MXJ1aGxsbzY3ZjQ0dw==" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/ZERIU Bogdan_Trainer.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">ZERIU Bogdan</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/dughiri stefan_Trainer .png');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">dughiri stefan</h3>
+                                <p class="trainer-title">Trainer</p>
+                            </div>
+                            <a href="https://www.instagram.com/cezar_mnt?igsh=M25oN3p6YXh2NGlr&utm_source=qr" class="trainer-social" aria-label="Instagram" target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
@@ -205,30 +489,156 @@
             <div class="trainer-grid" id="grid-orga" style="display: none;">
                 <div class="trainer-card">
                     <div class="trainer-card-inner">
-                        <div class="trainer-card-image"
-                            style="background-image: url('https://via.placeholder.com/400x500/0a0a14/00e5ff?text=Orga+1');">
-                        </div>
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Apostu Bianca_Orga_Events.jpg');"></div>
                         <div class="trainer-overlay">
                             <div class="trainer-info">
-                                <h3 class="trainer-name">Ionut Radu</h3>
-                                <p class="trainer-title">Project Manager</p>
+                                <h3 class="trainer-name">Apostu Bianca</h3>
+                                <p class="trainer-title">ORGA EVENTS</p>
                             </div>
-                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                            <a href="https://www.instagram.com/biancaeapostu?igsh=Z2ZsajE3MnRnbGg1&utm_source=qr" class="trainer-social" aria-label="Instagram" target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="trainer-card">
                     <div class="trainer-card-inner">
-                        <div class="trainer-card-image"
-                            style="background-image: url('https://via.placeholder.com/400x500/0a0a14/ff007f?text=Orga+2');">
-                        </div>
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Barna Irina_Orga_Legal.jpeg');"></div>
                         <div class="trainer-overlay">
                             <div class="trainer-info">
-                                <h3 class="trainer-name">Maria Tudor</h3>
-                                <p class="trainer-title">PR & Media</p>
+                                <h3 class="trainer-name">Barna Irina</h3>
+                                <p class="trainer-title">ORGA LEGAL</p>
                             </div>
-                            <a href="#" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Bratu Vladut-Stefan_Orga_Marketing.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Bratu Vladut-Stefan</h3>
+                                <p class="trainer-title">ORGA MARKETING</p>
+                            </div>
+                            <a href="https://www.instagram.com/cezar_mnt?igsh=M25oN3p6YXh2NGlr&utm_source=qr" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Cam Alexandru-Constantin_Orga_Events.jpeg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Cam Alexandru-Constantin</h3>
+                                <p class="trainer-title">ORGA EVENTS</p>
+                            </div>
+                            <a href="https://www.instagram.com/alexandru.cam?igsh=MTdoN2llamNvczFjbQ==" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Florea Octavian_ORGA_Marketing.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Florea Octavian</h3>
+                                <p class="trainer-title">ORGA MARKETING</p>
+                            </div>
+                            <a href="https://www.instagram.com/taviflorea4488?igsh=MTc4czVraGJpZW10MA==" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Ilie Laura_ORGA_Marketing.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Ilie Laura</h3>
+                                <p class="trainer-title">ORGA MARKETING</p>
+                            </div>
+                            <a href="https://www.instagram.com/rebecaa.laura" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/LutaIsabela_ORGA_Marketing.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Isabela Luta</h3>
+                                <p class="trainer-title">ORGA MARKETING</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Matei Radu_ORGA_IT.png');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Matei Radu</h3>
+                                <p class="trainer-title">ORGA IT</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Morcan Erica_ORGA_Events.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Morcan Erica</h3>
+                                <p class="trainer-title">ORGA EVENTS</p>
+                            </div>
+                            <a href="https://www.instagram.com/zlatan.ro/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Simiuc Mihai-Ciprian_ORGA_IT.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Simiuc Mihai-Ciprian</h3>
+                                <p class="trainer-title">ORGA IT</p>
+                            </div>
+                            <a href="https://www.instagram.com/mihai_.simiuc?Smecher_este_DroWo_Mult_Succes" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Stefan-Adrian Benza_ORGA_EVENTS.jpg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Stefan-Adrian Benza</h3>
+                                <p class="trainer-title">ORGA EVENTS</p>
+                            </div>
+                            <a href="https://www.instagram.com/benzaady/" class="trainer-social" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-card-inner">
+                        <div class="trainer-card-image" style="background-image: url('trainer-photos/Turmac Marius-Razvan_ORGA_Events.jpeg');"></div>
+                        <div class="trainer-overlay">
+                            <div class="trainer-info">
+                                <h3 class="trainer-name">Turmac Marius-Razvan</h3>
+                                <p class="trainer-title">ORGA EVENTS</p>
+                            </div>
+                            <a href="https://www.instagram.com/mihneamady?igsh=MTJnNnJyOXhjNTZpYg==" class="trainer-social" aria-label="Instagram" target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
@@ -418,80 +828,86 @@
         </section>
 
         <!-- LOCATIE -->
-        <section id="locatie" class="section">
-            <h1 class="neon-title">Where to come</h1>
+        <section id="locatie" class="section" style="margin-top: 60px;">
+            <h1 class="neon-title">Where to meet
+            </h1>
             <div class="location-grid">
                 <div class="location-card glass-pod">
-                    <h3 class="card-title-location">UNSTPB</h3>
-                    <p>Sesiunile de training și asamblare vor avea loc în cadrul campusului UNSTPB.</p>
+                    <h3 class="card-title-location">UNSTPB (Campus & FIMM)</h3>
+                    <p>Sesiunile de training și asamblare.</p>
                     <div class="iframe-wrapper">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.734699423751!2d26.049863!3d44.43860399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201ea132d5141%3A0xf5d5aecb94fa6dc7!2sNational%20University%20of%20Science%20and%20Technology%20POLITEHNICA%20Bucharest!5e0!3m2!1sen!2sro!4v1773241894123!5m2!1sen!2sro"
                             width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
-                <!-- <div class="location-card glass-pod">
-                    <h3 class="card-title-location">Aerodrom Geamăna (Arges)</h3>
-                    <p>Zborurile de test și competiția se vor desfășura în aer liber la Geamana.</p>
+                <div class="location-card glass-pod">
+                    <h3 class="card-title-location">Aerodrom Geamăna</h3>
+                    <p>Ziua zborului și competiția finală.</p>
                     <div class="iframe-wrapper">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.2461052686235!2d24.889904176579!3d44.81655067641679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2bd2cad60cd79%3A0x8b9e5010980d441f!2sAerodromul%20Geam%C4%83na!5e0!3m2!1sen!2sro!4v1773241950864!5m2!1sen!2sro"
                             width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
-
-        <!-- PARTENERI -->
-        <section id="parteneri" class="section">
-            <h1 class="neon-title">Parteneri</h1>
+        <!-- SPONSORS & PARTNERS -->
+        <section id="sponsors-partners" class="section">
+            <h1 class="neon-title">Sponsors and Partners</h1>
             <div class="sponsor-grid">
-                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
-                    <img src="https://via.placeholder.com/160x90/0a0a14/00e5ff?text=Partner+1" alt="Partner 1"
-                        class="sponsor-logo">
-                    <span class="sponsor-name">Partener Principal</span>
+                <a href="https://upb.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/poli.svg" alt="UNSTPB" class="sponsor-logo">
+                    <span class="sponsor-name">UNSTPB</span>
                 </a>
-                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
-                    <img src="https://via.placeholder.com/160x90/0a0a14/ff007f?text=Partner+2" alt="Partner 2"
-                        class="sponsor-logo">
-                    <span class="sponsor-name">Partener Strategic</span>
+                <a href="https://mecanica.upb.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/sigla_facultatea_FIMM.png" alt="FIMM" class="sponsor-logo">
+                    <span class="sponsor-name">FIMM</span>
                 </a>
-                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
-                    <img src="https://via.placeholder.com/160x90/0a0a14/9d00ff?text=Partner+3" alt="Partner 3"
-                        class="sponsor-logo">
-                    <span class="sponsor-name">Partener Media</span>
+                 <a href="https://campus.pub.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/campus-institute.svg" alt="Campus Institute" class="sponsor-logo">
+                    <span class="sponsor-name">Campus Institute</span>
                 </a>
-            </div>
-        </section>
-
-        <!-- SPONSORI -->
-        <section id="sponsori" class="section">
-            <h1 class="neon-title">Sponsori</h1>
-            <div class="sponsor-grid">
-                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
-                    <img src="https://via.placeholder.com/160x90/0a0a14/ff007f?text=Logo+1" alt="Sponsor 1"
-                        class="sponsor-logo">
-                    <span class="sponsor-name">Sponsor Platinum</span>
+                <a href="https://nova.campus.pub.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/nova.svg" alt="Nova" class="sponsor-logo">
+                    <span class="sponsor-name">Nova</span>
                 </a>
-                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
-                    <img src="https://via.placeholder.com/160x90/0a0a14/00e5ff?text=Logo+2" alt="Sponsor 2"
-                        class="sponsor-logo">
-                    <span class="sponsor-name">Sponsor Gold</span>
+                <a href="https://www.armyacademy.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/aft.svg" alt="AFT" class="sponsor-logo">
+                    <span class="sponsor-name">Autonomous Flight Technologies</span>
                 </a>
-                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
-                    <img src="https://via.placeholder.com/160x90/0a0a14/9d00ff?text=Logo+3" alt="Sponsor 3"
-                        class="sponsor-logo">
-                    <span class="sponsor-name">Sponsor Silver 1</span>
+               
+                <a href="https://www.gknaerospace.com/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/fokker.svg" alt="Fokker" class="sponsor-logo">
+                    <span class="sponsor-name">Fokker</span>
                 </a>
-                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
-                    <img src="https://via.placeholder.com/160x90/0a0a14/ffcc00?text=Logo+4" alt="Sponsor 4"
-                        class="sponsor-logo">
-                    <span class="sponsor-name">Sponsor Silver 2</span>
+                <a href="https://zborcadou.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/logo-zborcadou.ro_.png" alt="Zbor Cadou" class="sponsor-logo">
+                    <span class="sponsor-name">Zbor Cadou</span>
                 </a>
-                <a href="https://example.com" target="_blank" class="sponsor-card glass-pod">
-                    <img src="https://via.placeholder.com/160x90/0a0a14/ff007f?text=Logo+5" alt="Sponsor 5"
-                        class="sponsor-logo">
-                    <span class="sponsor-name">Sponsor Silver 3</span>
+                <a href="https://www.tchibo.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/tchibo-logo.svg" alt="Tchibo" class="sponsor-logo">
+                    <span class="sponsor-name">Tchibo</span>
+                </a>
+                <a href="https://merlins.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/merlins.svg" alt="Merlin's" class="sponsor-logo">
+                    <span class="sponsor-name">Merlin's</span>
+                </a>
+                <a href="https://www.artsafari.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/art-safari.png" alt="Art Safari" class="sponsor-logo">
+                    <span class="sponsor-name">Art Safari</span>
+                </a>
+                <a href="https://www.comedie.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/Teatrul_de_Comedie.png" alt="Teatrul de Comedie" class="sponsor-logo">
+                    <span class="sponsor-name">Teatrul de Comedie</span>
+                </a>
+                <a href="https://vmaxkarting.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/VMax-Karting.png" alt="VMax Karting" class="sponsor-logo">
+                    <span class="sponsor-name">VMax Karting</span>
+                </a>
+                <a href="https://www.lockedin.ro/" target="_blank" class="sponsor-card glass-pod">
+                    <img src="sponsors-partners/locked-in-logo.jpg" alt="Locked In" class="sponsor-logo">
+                    <span class="sponsor-name">Locked In</span>
                 </a>
             </div>
         </section>
