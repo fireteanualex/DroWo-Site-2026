@@ -64,34 +64,31 @@
             <!-- ZIUA 1 -->
             <div class="day-card glass-pod schedule-content" id="day-0">
                 <div class="day-header">
-                    <span class="day-date">Vineri 27 Martie</span>
+                    <span class="day-date">Vineri 27.03</span>
                     <h2 class="day-location"><i class="fa-solid fa-location-dot"></i> Institutul CAMPUS</h2>
                 </div>
                 <div class="timeline">
                     <div class="time-row"><span>18:00 - 18:30</span><span>Sosire</span></div>
-                    <div class="time-row highlight-blue"><span>18:30 - 19:00</span><span>GTK (Get to Know)</span></div>
-                    <div class="time-row"><span>19:00 - 19:15</span><span>Deschidere Oficială</span></div>
-                    <div class="time-row highlight-pink"><span>19:15 - 20:00</span><span>Training Introducere</span>
-                    </div>
+                    <div class="time-row highlight-blue"><span>18:30 - 19:00</span><span>Get to know</span></div>
+                    <div class="time-row"><span>19:00 - 19:15</span><span>Deschidere</span></div>
+                    <div class="time-row highlight-pink"><span>19:15 - 20:00</span><span>Introducere</span></div>
                     <div class="time-row"><span>20:00 - 20:30</span><span>Quiz</span></div>
-                    <div class="time-row highlight-purple"><span>22:00</span><span>Party <i
-                                class="fa-solid fa-music"></i></span></div>
+                    <div class="time-row highlight-purple"><span>22:00 - +</span><span>Party <i class="fa-solid fa-music"></i></span></div>
                 </div>
             </div>
 
             <!-- ZIUA 2 -->
             <div class="day-card glass-pod schedule-content" id="day-1" style="display:none;">
                 <div class="day-header">
-                    <span class="day-date">Sâmbătă 28 Martie</span>
+                    <span class="day-date">Sâmbătă 28.03</span>
                     <h2 class="day-location"><i class="fa-solid fa-location-dot"></i> Institutul CAMPUS</h2>
                 </div>
                 <div class="timeline">
                     <div class="time-row"><span>12:00 - 12:30</span><span>Sosire</span></div>
-                    <div class="time-row"><span>12:30 - 13:00</span><span>Energizer</span></div>
-                    <div class="time-row highlight-pink"><span>13:00 - 13:45</span><span>Training Electronică</span>
-                    </div>
+                    <div class="time-row highlight-blue"><span>12:30 - 13:00</span><span>Energizer</span></div>
+                    <div class="time-row highlight-pink"><span>13:00 - 13:45</span><span>Training Electronica</span></div>
                     <div class="time-row"><span>13:45 - 14:15</span><span>Quiz</span></div>
-                    <div class="time-row"><span>14:15 - 14:30</span><span>Pauză</span></div>
+                    <div class="time-row"><span>14:15 - 14:30</span><span>Pauza</span></div>
                     <div class="time-row highlight-pink"><span>14:30 - 15:15</span><span>Training Design</span></div>
                     <div class="time-row"><span>15:15 - 15:45</span><span>Quiz</span></div>
                 </div>
@@ -100,58 +97,55 @@
             <!-- ZIUA 3 -->
             <div class="day-card glass-pod schedule-content" id="day-2" style="display:none;">
                 <div class="day-header">
-                    <span class="day-date">Duminică 29 Martie</span>
-                    <h2 class="day-location"><i class="fa-solid fa-location-dot"></i> CAMPUS & FIMM (CG)</h2>
+                    <span class="day-date">Duminică 29.03</span>
+                    <h2 class="day-location"><i class="fa-solid fa-location-dot"></i> CAMPUS & FIMM Corp CG</h2>
                 </div>
                 <div class="timeline">
                     <div class="time-row"><span>10:00 - 10:30</span><span>Sosire</span></div>
-                    <div class="time-row highlight-pink"><span>11:00 - 11:45</span><span>Training BetaFlight</span>
-                    </div>
+                    <div class="time-row highlight-blue"><span>10:30 - 11:00</span><span>Energizer</span></div>
+                    <div class="time-row highlight-pink"><span>11:00 - 11:45</span><span>Training BetaFlight</span></div>
                     <div class="time-row"><span>11:45 - 12:15</span><span>Quiz</span></div>
-                    <div class="time-row highlight-blue"><span>12:15 - 12:45</span><span>Prezentare NOVA</span></div>
+                    <div class="time-row highlight-blue"><span>12:15 - 12:45</span><span>NOVA</span></div>
+                    <div class="time-row"><span>12:45 - 13:00</span><span>Pauza</span></div>
                     <div class="time-row highlight-pink"><span>13:00 - 13:30</span><span>Training Soldering</span></div>
-                    <div class="time-row highlight-gold"><span>13:45 - 16:45</span><span>Soldering Session</span></div>
+                    <div class="time-row"><span>13:30 - 13:45</span><span>Pauza</span></div>
+                    <div class="time-row highlight-gold"><span>13:45 - 16:45</span><span>Soldering</span></div>
                 </div>
             </div>
 
             <!-- ZIUA 4 -->
             <div class="day-card glass-pod schedule-content" id="day-3" style="display:none;">
                 <div class="day-header">
-                    <span class="day-date">Sâmbătă 04 Aprilie</span>
-                    <h2 class="day-location"><i class="fa-solid fa-location-dot"></i> FIMM - Corp CG</h2>
+                    <span class="day-date">Sâmbătă 04.04</span>
+                    <h2 class="day-location"><i class="fa-solid fa-location-dot"></i> FIMM Corp CG</h2>
                 </div>
                 <div class="timeline">
                     <div class="time-row"><span>09:00 - 09:30</span><span>Sosire</span></div>
-                    <div class="time-row highlight-gold"><span>09:30 - 14:00</span><span>Construcție Etapa 1</span>
-                    </div>
-                    <div class="time-row"><span>14:00 - 15:30</span><span>Pauză de masă</span></div>
-                    <div class="time-row highlight-gold"><span>15:30 - 20:00</span><span>Construcție Etapa 2</span>
-                    </div>
-                    <div class="time-row highlight-blue"><span>20:00 - 21:00</span><span>Configurare BetaFlight</span>
-                    </div>
+                    <div class="time-row highlight-gold"><span>09:30 - 14:00</span><span>Constructie 1</span></div>
+                    <div class="time-row"><span>14:00 - 15:30</span><span>Pauza de masa</span></div>
+                    <div class="time-row highlight-gold"><span>15:30 - 20:00</span><span>Constructie 2</span></div>
+                    <div class="time-row highlight-pink"><span>20:00 - 21:00</span><span>BetaFlight</span></div>
                 </div>
             </div>
 
             <!-- ZIUA 5 -->
             <div class="day-card glass-pod schedule-content" id="day-4" style="display:none;">
                 <div class="day-header">
-                    <span class="day-date">Duminică 05 Aprilie</span>
-                    <h2 class="day-location"><i class="fa-solid fa-plane-up"></i> Aerodrom Geamăna</h2>
+                    <span class="day-date">Duminică 05.04</span>
+                    <h2 class="day-location"><i class="fa-solid fa-plane-up"></i> Aerodrom Geamana</h2>
                 </div>
                 <div class="timeline">
                     <div class="time-row"><span>10:30 - 11:00</span><span>Sosire Aerodrom</span></div>
-                    <div class="time-row highlight-blue"><span>11:00 - 18:00</span><span>Lansări & Competiție</span>
-                    </div>
+                    <div class="time-row highlight-blue"><span>11:00 - 18:00</span><span>Lansari</span></div>
                     <div class="time-row highlight-gold"><span>18:00 - 18:30</span><span>Premiere</span></div>
-                    <div class="time-row"><span>18:30 - 19:00</span><span>Închidere Eveniment</span></div>
+                    <div class="time-row"><span>18:30 - 19:00</span><span>Inchidere</span></div>
                 </div>
             </div>
         </div>
 
         <!-- LOCATIONS SECTION -->
         <section id="locatie" class="section" style="margin-top: 60px;">
-            <h1 class="neon-title">Where to meet
-            </h1>
+            <h1 class="neon-title">Where to meet</h1>
             <div class="location-grid">
                 <div class="location-card glass-pod">
                     <h3 class="card-title-location">UNSTPB (Campus & FIMM)</h3>

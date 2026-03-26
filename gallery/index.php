@@ -179,42 +179,6 @@
                 <div class="gallery-item glass-pod">
                     <img src="gallery/WhatsApp Image 2026-03-05 at 18.57.59 (2).jpeg" alt="DroWo Moment" loading="lazy">
                 </div>
-                <div class="gallery-item glass-pod">
-                    <video autoplay loop muted playsinline
-                        style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);">
-                        <source src="gallery/WhatsApp Video 2026-03-05 at 18.55.37.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item glass-pod">
-                    <video autoplay loop muted playsinline
-                        style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);">
-                        <source src="gallery/WhatsApp Video 2026-03-05 at 18.55.40.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item glass-pod">
-                    <video autoplay loop muted playsinline
-                        style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);">
-                        <source src="gallery/WhatsApp Video 2026-03-05 at 18.55.52.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item glass-pod">
-                    <video autoplay loop muted playsinline
-                        style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);">
-                        <source src="gallery/WhatsApp Video 2026-03-05 at 18.55.58.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item glass-pod">
-                    <video autoplay loop muted playsinline
-                        style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);">
-                        <source src="gallery/WhatsApp Video 2026-03-05 at 18.58.45.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item glass-pod">
-                    <video autoplay loop muted playsinline
-                        style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);">
-                        <source src="gallery/WhatsApp Video 2026-03-05 at 18.59.35.mp4" type="video/mp4">
-                    </video>
-                </div>
             </div>
 
             <!-- <div class="join-section" style="margin-top: 80px; text-align: center;">
