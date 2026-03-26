@@ -1,8 +1,0 @@
-- Caching pe utilizatori - Butonul de login nu mai apare daca utilizatorul este logat (Apare un pod cu echipa si logout)
-- Integrare baza de date pentru punctaje
-- Integrare baza de date pentru utilizatori
-- Sectiunea de Leaderboard afiseaza punctajul in timp real
-- Quiz-uri protejate (Take quiz cu cod de quiz si quiz-ul selectat)
-- Creare pagini quiz-uri
-- Add a checkbox to make password visible in login page
-- 

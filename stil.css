@@ -2073,3 +2073,102 @@ p {
         font-size: 1.4rem;
     }
 }
+
+/* =============================================
+   NAVBAR TEAM LOGGED IN USER STATE
+   ============================================= */
+.nav-team-name {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+    margin-right: 0;
+    letter-spacing: 1px;
+}
+
+.btn-logout {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff !important;
+    padding: 8px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.btn-logout:hover {
+    border-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1), inset 0 0 10px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+/* =============================================
+   QUIZ CARD FULL WIDTH (HOMEPAGE)
+   ============================================= */
+.quiz-card-full {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px !important;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 30px;
+}
+
+.quiz-icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-icon-container i {
+    font-size: 80px;
+    color: var(--neon-blue);
+    filter: drop-shadow(0 0 15px currentColor);
+}
+
+.quiz-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.quiz-content p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #e0e6ed;
+}
+
+@media (min-width: 768px) {
+    .quiz-card-full {
+        flex-direction: row;
+        text-align: left;
+    }
+    .quiz-icon-container {
+        width: 30%;
+        border-right: 1px solid var(--glass-border);
+        padding-right: 30px;
+    }
+    .quiz-content {
+        width: 70%;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .quiz-content p {
+        text-align: left;
+    }
+}
